@@ -17,9 +17,13 @@ string: .asciz "El resultado es: %d\n" @String a imprimir
 .extern printf @printf de la libreria de c para imprimir
 main:
         push {ip, lr} @ip y lr son añadidos al stack
-        ldr r0, =x3030
+
+        mov r0, pc
+        bl printf
+
+       /* ldr r0, =x3030
         ldr r1, =x3031
-        ldr r2, =x3032
-        
+        ldr r2, =x3032*/
+
         pop {ip, pc} @pop del ip y pc al stack
 
