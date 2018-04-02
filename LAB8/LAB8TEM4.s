@@ -1,11 +1,11 @@
 /*
 Universidad del Valle de Guatemala
 Organizacion de computadoras y assembler
-
 */
 
 /* Datos con los que se trabajara */
 .data
+.align 2
 stringH: .asciz "Numero de Hombres: %d\n"
 stringM: .asciz "Numero de Mujeres: %d\n"
 persona1: .word 2
@@ -16,6 +16,8 @@ persona3: .word 2
 /* FUNCION PRINCIPAL DEL PROGRAMA */
 .text
 .global main
+.align 2
+.tyoe main, %function
 .extern printf
 main:
 	stmfd sp!, {lr}	/* SP = R13 link register */
@@ -61,6 +63,7 @@ main:
 	ldmfd sp!, {lr}	/* R13 = SP */
 	bx lr
 
+/* Direcciones de las personas almacenadas en memoria */
 dirp1: .word persona1
 dirp2: .word persona2
 dirp3: .word persona3

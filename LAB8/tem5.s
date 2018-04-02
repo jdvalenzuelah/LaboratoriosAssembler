@@ -2,8 +2,6 @@
 Universidad del Valle de Guatemala
 Organizacion de computadoras y assembler
 Archivo: multiplicacion.s
-Programa toma dos numeros en memoria (num1 y num2), multiplica ambos
-numeros y muestra el resultado en pantalla.
 Autor: David Valenzuela 171001
 */
 
@@ -55,6 +53,7 @@ main:
 
         pop {ip, pc} @pop del ip y pc al stack
 
+/* Direcciones de los datos*/
 adrn1: .word num1
 adrn2: .word num2
 adrn3: .word num3
