@@ -6,8 +6,8 @@ Organizacion de computadoras y assembler
 
 /* Datos con los que se trabajara */
 .data
-stringH: asciz "Numero de hombres: %d\n"
-stringM: asciz "Numero de Mujeres: %d\n"
+stringH: .asciz "Numero de hombres: %d\n"
+stringM: .asciz "Numero de Mujeres: %d\n"
 persona1: .word 1
 persona2: .word 2
 persona3: .word 3
@@ -26,23 +26,23 @@ main:
 	ldr r2, dirp1 @persona1
 	ldr r3, dirp2 @persona2
 	ldr r4, dirp3 @persona3
-	mov r5, 0
+	mov r5, #0
 
 	/* Contador de hombres */
 	cmp r2, #2 @Si r2 es hombre (r2 == 2)
 	moveq r5, #1 @Sumamos 1 al contador
 	add r1, r5 @Sumamos uno al conteo de hombres
-	mov r5, 0 @Reseteamos el contador
+	mov r5, #0 @Reseteamos el contador
 
 	cmp r3, #2 @Si r2 es hombre (r3 == 2)
 	moveq r5, #1 @Sumamos 1 al contador
 	add r1, r5 @Sumamos uno al conteo de hombres
-	mov r5, 0 @Reseteamos el contador
+	mov r5, #0 @Reseteamos el contador
 
 	cmp r4, #2 @Si r2 es hombre (r4 == 2)
 	moveq r5, #1 @Sumamos 1 al contador
 	add r1, r5 @Sumamos uno al conteo de hombres
-	mov r5, 0 @Reseteamos el contador
+	mov r5, #0 @Reseteamos el contador
 	bl printf @Imprimimos numero de hombres
 
 	ldr r0, =stringM
