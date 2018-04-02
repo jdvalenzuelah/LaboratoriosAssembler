@@ -19,6 +19,7 @@ main:
         push {ip, lr} @ip y lr son añadidos al stack
 
         mov r0, pc
+        add r0, r0, #0
         bl printf
 
        /* ldr r0, =x3030
