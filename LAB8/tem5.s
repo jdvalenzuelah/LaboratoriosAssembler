@@ -27,7 +27,7 @@ main:
         ldr r0, =string
         ldr r2, adrn1 @num1
         ldr r3, adrn2 @num2
-        ldr r4, adrn3 @num3
+        @ldr r4, adrn3 @num3
         ldr r2, [r2] @num1
         ldr r3, [r3] @num2
         ldr r4, [r4] @num3
