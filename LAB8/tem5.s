@@ -18,6 +18,7 @@ string: .asciz "El resultado es: %d\n" @String a imprimir
 main:
         push {ip, lr} @ip y lr son añadidos al stack
 
+        ldr r1, =string
         mov r0, pc
         add r0, r0, #0
         bl printf
