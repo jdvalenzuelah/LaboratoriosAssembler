@@ -46,10 +46,12 @@ main:
 	moveq r5, #1 @Sumamos 1 al contador
 	add r1, r5 @Sumamos uno al conteo de hombres
 	mov r5, #0 @Reseteamos el contador
+
+	mov r6, r1 @Copiamos el numero de hombres
 	bl printf @Imprimimos numero de hombres
 
 	ldr r0, =stringM
-	rsb r1, r1, #3 @Numero de mujeres = 3 - numero de hombres
+	rsb r1, r6, #3 @Numero de mujeres = 3 - numero de hombres
 	bl printf @Imprimimos numero de mujeres
 
 
