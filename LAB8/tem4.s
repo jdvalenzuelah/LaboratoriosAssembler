@@ -10,7 +10,7 @@ stringH: .asciz "Numero de hombres: %d\n"
 stringM: .asciz "Numero de Mujeres: %d\n"
 persona1: .word 1
 persona2: .word 2
-persona3: .word 3
+persona3: .word 2
 
 
 /* FUNCION PRINCIPAL DEL PROGRAMA */
@@ -26,6 +26,9 @@ main:
 	ldr r2, dirp1 @persona1
 	ldr r3, dirp2 @persona2
 	ldr r4, dirp3 @persona3
+	ldr r3, [r3]
+	ldr r4, [r4]
+	ldr r2, [r2] 
 	mov r5, #0
 
 	/* Contador de hombres */
