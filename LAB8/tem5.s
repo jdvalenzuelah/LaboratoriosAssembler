@@ -16,6 +16,8 @@ string: .asciz "El resultado es: %d\n" @String a imprimir
 .global main
 .extern printf @printf de la libreria de c para imprimir
 main:
+	
+	.ORIG x3000
         push {ip, lr} @ip y lr son añadidos al stack
 
         ldr r0, =string
