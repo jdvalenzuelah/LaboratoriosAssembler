@@ -8,8 +8,8 @@ Organizacion de computadoras y assembler
 .data
 stringH: .asciz "Numero de hombres: %d\n"
 stringM: .asciz "Numero de Mujeres: %d\n"
-persona1: .word 1
-persona2: .word 2
+persona1: .word 2
+persona2: .word 1
 persona3: .word 2
 
 
