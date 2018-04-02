@@ -59,6 +59,6 @@ main:
 	ldmfd sp!, {lr}	/* R13 = SP */
 	bx lr
 
-.dirp1: .word persona1
-.dirp2: .word persona2
-.dirp3: .word persona3
+dirp1: .word persona1
+dirp2: .word persona2
+dirp3: .word persona3
