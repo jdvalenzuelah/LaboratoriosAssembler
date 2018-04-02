@@ -12,7 +12,7 @@ Autor: David Valenzuela 171001
 string: .asciz "EL resultado es: %d\n"
 num1: .word 7
 num2: .word -1
-num3: .word 5 
+num3: .word -5 
 
 /* Funcion main del programa*/
 .text
@@ -27,7 +27,7 @@ main:
         ldr r0, =string
         ldr r2, adrn1 @num1
         ldr r3, adrn2 @num2
-        @ldr r4, adrn3 @num3
+        ldr r4, adrn3 @num3
         ldr r2, [r2] @num1
         ldr r3, [r3] @num2
         ldr r4, [r4] @num3
