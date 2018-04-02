@@ -55,7 +55,7 @@ main:
 	ldr r0, =stringM
 	rsb r1, r6, #3 @Numero de mujeres = 3 - numero de hombres
 	bl printf @Imprimimos numero de mujeres
-
+	
 
 	/* salida correcta */
 	mov r0, #0

@@ -1,7 +1,7 @@
 /*
 Universidad del Valle de Guatemala
 Organizacion de computadoras y assembler
-Archivo: multiplicacion.s
+Archivo: tem5.s
 Autor: David Valenzuela 171001
 */
 
