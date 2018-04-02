@@ -6,7 +6,7 @@ Organizacion de computadoras y assembler
 
 /* Datos con los que se trabajara */
 .data
-stringH: .asciz "Numero de hombres: %d\n"
+stringH: .asciz "Numero de Hombres: %d\n"
 stringM: .asciz "Numero de Mujeres: %d\n"
 persona1: .word 2
 persona2: .word 1
