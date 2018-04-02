@@ -57,4 +57,4 @@ main:
 
 adrn1: .word num1
 adrn2: .word num2
-adrm3: .word num3
+adrn3: .word num3
