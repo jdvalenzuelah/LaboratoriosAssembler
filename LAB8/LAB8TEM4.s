@@ -31,7 +31,7 @@ main:
 	ldr r3, [r3]
 	ldr r4, [r4]
 	ldr r2, [r2] 
-	mov r5, #0
+	mov r5, #0 @Contador de mujeres
 
 	/* Contador de hombres */
 	cmp r2, #2 @Si r2 es hombre (r2 == 2)
@@ -52,10 +52,11 @@ main:
 	mov r6, r1 @Copiamos el numero de hombres
 	bl printf @Imprimimos numero de hombres
 
-	ldr r0, =stringM
+	/* Contador de mujeres */
+	ldr r0, =stringM @ Formato a imprimir
 	rsb r1, r6, #3 @Numero de mujeres = 3 - numero de hombres
 	bl printf @Imprimimos numero de mujeres
-	
+
 
 	/* salida correcta */
 	mov r0, #0
