@@ -17,7 +17,7 @@ persona3: .word 2
 .text
 .global main
 .align 2
-.tyoe main, %function
+.type main, %function
 .extern printf
 main:
 	stmfd sp!, {lr}	/* SP = R13 link register */
