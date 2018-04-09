@@ -60,9 +60,9 @@ sumar:
 
 	/* Opcion para suma */
 	ldr r0, =suma
-	ldr r1, =a
-	bl scanf
+	ldr r1, [r1]
 	cmp r1, r0
+	ldreq
 	beq sumar
 
 
