@@ -50,7 +50,7 @@ main:
 
 	@Seleccion de opcion del programa
 	ldr r0, =opcion
-	@ldr r1, =a
+	ldr r1, =a
 	bl scanf
 
 	bl printf
