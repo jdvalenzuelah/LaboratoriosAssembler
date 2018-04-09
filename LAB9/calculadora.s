@@ -8,6 +8,7 @@ Organizacion de computadoras y assembler
 .align 2
 
 a: .word 0
+b: .asciz "%s"
 
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 opcion: .asciz "%s"
@@ -28,7 +29,7 @@ main:
 
 	@Entrada de Datos
 	ldr r0, =opcion
-	ldr r1, =a
+	ldr r1, =b
 	bl scanf
 
 	@imprime lo recibido
