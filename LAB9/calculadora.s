@@ -14,7 +14,7 @@ b: .asciz "%d"
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 opcion: .asciz "%s"
 operando: .asciz "%d"
-
+prueba: .asciz "Igual"
 /* Operandos */
 suma: .asciz "+"
 resta: .asciz "-"
@@ -62,10 +62,14 @@ main:
 	/* Opcion para suma */
 	ldr r0, =suma
 	cmp r1, r0
+	ldreq r0, =prueba
+	bleq printf
+
+	/*
 	ldreq r0, =operando
 	ldreq r5, =b
 	bleq scanf
-	beq sumar
+	beq sumar*/
 
 	
 
