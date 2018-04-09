@@ -13,7 +13,7 @@ formatoEntrada: .asciz "%s"
 
 /* Valores almacenados */
 opcionSeleccionada: .asciz "%s"
-prueba: .asciz "\n %s \n"
+prueba: .asciz "Succesful"
 /* --------------------------------------------------------------- */
 
 /*  ------------------ Funcion main del programa ----------------- */
@@ -28,14 +28,20 @@ main:
 	bl printf @Imprimimos el menu
 
 	/* Pedimos la opcion al usuario */
-	ldr r0, =formatoEntrada
-	ldr r1, =opcionSeleccionada
+	ldr r0, =formatoEntrada @Formato de ingreso
+	ldr r1, =opcionSeleccionada @Guardamos la opcion en memoria
 	bl scanf
 
-	@prueba
-	ldr r0, =prueba
-	ldr r1, =opcionSeleccionada
-	bl printf
+	/* Opcion suma */
+	ldr r0, =opcionSeleccionada
+	ldr r0, [r0]
+	cmp r0, #'+'
+	ldreq r0, =prueba
+	bleq printf
+
+
+
+	
 
 	/* salida correcta */
 	mov r0, #0
