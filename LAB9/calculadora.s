@@ -17,8 +17,12 @@ resta: .asciz "-"
 multiplicacion: .asciz "*"
 salr: .asciz "q"
 operando: .asciz "%d"
+<<<<<<< HEAD
 
 
+=======
+valor: .word 0
+>>>>>>> 6f4ccb39d0e53f52811bb2ea1e9675a61fb9d71d
 /*Funcion principal el programa*/
 .text
 .global main
@@ -56,3 +60,10 @@ entradaNumero:
 	mov r3, #0
 	ldmfd sp!, {lr}	/* R13 = SP */
 	bx lr
+
+suma:
+	ldr r4, =a
+	ldr r0, [r4]	/*guardamos el valor de a en el registro r4*/
+	add r5, r4, r4
+	ldr r4, = valor
+	str r5, [r4]
