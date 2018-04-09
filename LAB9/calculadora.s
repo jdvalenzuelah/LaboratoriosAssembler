@@ -8,10 +8,13 @@ Organizacion de computadoras y assembler
 .align 2
 
 /* Formatos para ingreso de datos */
-menu: .asciz "1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. salir del programa\nIngrese una opcion a trabjar:"
+menu: .asciz "	1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. Mostrar resultado. \n	5. salir del programa\nIngrese una opcion a trabjar: "
 formatoEntrada: .asciz "%d"
 /* Valores almacenados */
-opcionSeleccionada: .asciz "%d"
+opcionSeleccionada: .word 0
+valor: .word 0
+operando: .word 0
+
 prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
@@ -19,6 +22,17 @@ prueba: .asciz "\n %d \n"
 .text
 .global main
 .extern printf @printf de la libreria de c para imprimir
+
+suma:
+	ldr r0, =valor @Direccion del valor
+	ldr r1, [r0] @Cargamos valor a r1
+	ldr r2, =operando @Cargamos direccion de operando a r2
+	ldr r2, [r2] @Cargamos valor a r2
+	add r1, r1, r2 @r1 = r1 + r2
+	str r1, [r0] @valor = r1
+	b main
+
+
 main:
 	stmfd sp!, {lr}	/* SP = R13 link register */
 
@@ -32,9 +46,16 @@ main:
 	ldr r1, =opcionSeleccionada @Guardamos la opcion en memoria
 	bl scanf
 
-
-
+	/* Opcion de suma */
+	ldr r0, =opcionSeleccionada
+	ldr r0, [r0]
+	cmp r0, #1
 	
+	ldreq r0, =formatoEntrada
+	ldreq r1, =operando
+	bleq scanf
+
+
 
 	/* salida correcta */
 	mov r0, #0
