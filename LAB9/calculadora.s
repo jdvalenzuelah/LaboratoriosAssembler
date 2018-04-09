@@ -17,3 +17,9 @@ menu: .asciz "Ingrese una opcion a trabjar. \n	+ para suma \n	- para resta \n	* 
 
 main: 
 	stmfd sp!, {lr} /*link register*/
+
+	/* salida correcta */
+	mov r0, #0
+	mov r3, #0
+	ldmfd sp!, {lr}	/* R13 = SP */
+	bx lr
