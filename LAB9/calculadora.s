@@ -13,7 +13,7 @@ formatoEntrada: .asciz "%s"
 
 /* Valores almacenados */
 opcionSeleccionada: .asciz "%s"
-prueba: .asciz "\n %s"
+prueba: .asciz "\n %s \n"
 /* --------------------------------------------------------------- */
 
 /*  ------------------ Funcion main del programa ----------------- */
@@ -31,7 +31,7 @@ main:
 	ldr r0, =formatoEntrada
 	ldr r1, =opcionSeleccionada
 	bl scanf
-	
+
 	@prueba
 	ldr r0, =prueba
 	ldr r1, =opcionSeleccionada
