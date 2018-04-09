@@ -37,9 +37,9 @@ main:
 
 	/* Opcion suma */
 	ldr r0, =opcionSeleccionada
-	ldrb r0, [r0, #0]
+	ldr r0, [r0]
 	ldr r2, =strSuma
-	ldrb r2, [r1, #0]
+	ldr r2, [r2]
 
 	cmp r0, r2
 	addeq r1, r1, #1
