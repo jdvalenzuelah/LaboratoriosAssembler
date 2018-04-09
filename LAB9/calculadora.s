@@ -12,7 +12,7 @@ menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* 
 formatoEntrada: .asciz "%s"
 strSuma: .byte '+'
 /* Valores almacenados */
-opcionSeleccionada: .byte '%s'
+opcionSeleccionada: .byte 's'
 prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
