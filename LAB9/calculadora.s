@@ -32,7 +32,7 @@ main:
 	stmfd sp!, {lr} /*link register*/
 
 /* Funcion para suma de datos*/
-suma:
+sumar:
 	ldr r4, =a
 	ldr r0, [r4]	/*guardamos el valor de a en el registro r4*/
 	add r5, r4, r4
@@ -56,21 +56,21 @@ suma:
 	ldr r0, =salir
 	ldr r1, [r1]
 	cmp r1, r0
-	beq salir @Salir del programa
+	beq salida @Salir del programa
 
 	/* Opcion para suma */
 	ldr r0, =suma
 	ldr r1, =b
 	bl scanf
 	cmp r1, r0
-	beq suma
+	beq sumar
 
 
 
 
 
 	
-salir:
+salida:
 	/* salida correcta */
 	mov r0, #0
 	mov r3, #0
