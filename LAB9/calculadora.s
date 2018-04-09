@@ -53,6 +53,7 @@ main:
 
 	/* cargamos la opcion */
 	ldr r0, =opcion
+	bl printf
 	ldr r1, = suma
 
 	/* Opcion de suma */
