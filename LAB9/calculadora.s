@@ -60,8 +60,6 @@ main:
 	ldreq r0, =menu
 	bleq printf
 
-<<<<<<< HEAD
-
 	/* Opcion para salir */
 	ldr r0, =salir
 	cmp r1, r0
@@ -80,15 +78,6 @@ main:
 	ldreq r5, =b
 	bleq scanf
 	beq sumar*/
-
-=======
->>>>>>> f9795c8822f505074478ea69b81f5d28291b0f48
-	
-
-
-
-
-
 	
 salida:
 	/* salida correcta */
