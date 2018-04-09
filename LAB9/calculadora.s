@@ -10,9 +10,9 @@ Organizacion de computadoras y assembler
 /* Formatos para ingreso de datos */
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 formatoEntrada: .asciz "%s"
-strSuma: .asciz "+"
+strSuma: .string "+"
 /* Valores almacenados */
-opcionSeleccionada: .asciz "%s"
+opcionSeleccionada: .string "%s"
 prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
