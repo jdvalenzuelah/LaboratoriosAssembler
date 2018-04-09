@@ -27,7 +27,7 @@ operando: .word 0
 
 suma:
 	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
-	mov r6, 0 @Iniciamos r6 en 0
+	mov r6, #0 @Iniciamos r6 en 0
 	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
 
 	ldr r0, =valor @Direccion del valor
