@@ -53,7 +53,7 @@ main:
 	ldr r1, =a
 	bl scanf
 
-	mov r0, r1
+	ldr r0, r1
 	bl printf
 
 
