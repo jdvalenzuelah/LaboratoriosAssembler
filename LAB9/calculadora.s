@@ -54,13 +54,13 @@ sumar:
 
 
 	/* Opcion para salir */
-	ldr r0, =salir
+	/*ldr r0, =salir
 	cmp r1, r0
-	beq salida @Salir del programa
+	beq salida @Salir del programa*/
 
 	/* Opcion para suma */
 	ldr r0, =suma
-	cmp r1, r0
+	cmp r1, "+"
 	ldreq r0, =menu
 	bleq printf
 
