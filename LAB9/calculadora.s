@@ -12,7 +12,7 @@ menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* 
 formatoEntrada: .asciz "%s"
 
 /* Valores almacenados */
-opcionSeleccionada: .string "%s"
+opcionSeleccionada: .asciz "%s"
 prueba: .asciz "\n %s"
 /* --------------------------------------------------------------- */
 
