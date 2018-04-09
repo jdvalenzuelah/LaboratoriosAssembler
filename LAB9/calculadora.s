@@ -30,6 +30,11 @@ main:
 	ldr r1, =a
 	bl scanf
 
+	@imprime lo recibido
+	ldr r0, = entrada
+	ldr r1, = a
+	ldr r1, [r1]
+	bl printf
 
 
 
