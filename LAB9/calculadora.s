@@ -13,7 +13,7 @@ formatoEntrada: .asciz "%s"
 
 /* Valores almacenados */
 opcionSeleccionada: .asciz "%s"
-prueba: .asciz "Succesful"
+prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
 /*  ------------------ Funcion main del programa ----------------- */
@@ -22,6 +22,7 @@ prueba: .asciz "Succesful"
 .extern printf @printf de la libreria de c para imprimir
 main:
 	stmfd sp!, {lr}	/* SP = R13 link register */
+
 
 	/* Imprimimos el menu */
 	ldr r0, =menu @Cargamos el menu a r0
@@ -32,13 +33,16 @@ main:
 	ldr r1, =opcionSeleccionada @Guardamos la opcion en memoria
 	bl scanf
 
+	mov r1, 0
+
 	/* Opcion suma */
 	ldr r0, =opcionSeleccionada
 	ldr r0, [r0]
 	cmp r0, #'+'
-	ldreq r0, =prueba
-	bleq printf
+	addeq r1, r1, #1
 
+	ldr r0, =prueba
+	bl printf
 
 
 	
