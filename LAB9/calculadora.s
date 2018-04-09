@@ -35,12 +35,7 @@ main:
 	ldr r1, = a
 	ldr r1, [r1]
 	bl printf
-
-
-
-
-
-
+	
 	/* salida correcta */
 	mov r0, #0
 	mov r3, #0
