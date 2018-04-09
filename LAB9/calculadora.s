@@ -51,34 +51,14 @@ main:
 	ldr r1, =opcion
 	bl scanf
 
+	/* cargamos la opcion */
 	ldr r0, =opcion
-	bl printf
+	ldr r1, = suma
 
-	ldr r1, =operando
-
-	ldr r0, =suma
+	/* Opcion de suma */
 	cmp r0, r1
 	ldreq r0, =menu
 	bleq printf
-
-	/* Opcion para salir */
-	ldr r0, =salir
-	cmp r1, r0
-	ldreq r0, =prueba
-	bleq printf
-	@beq salida @Salir del programa
-
-	/* Opcion para suma */
-	ldr r0, =sum
-	cmp r1, r0
-	ldreq r0, =prueba
-	bleq printf
-
-	/*
-	ldreq r0, =operando
-	ldreq r5, =b
-	bleq scanf
-	beq sumar*/
 
 salida:
 	/* salida correcta */
