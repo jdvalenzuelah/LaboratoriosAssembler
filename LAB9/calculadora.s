@@ -54,7 +54,9 @@ main:
 	/* cargamos la opcion */
 	ldr r0, =opcion
 	bl printf
-	ldr r1, = suma
+
+	ldr r0, =suma
+	ldr r1, =opcion
 
 	/* Opcion de suma */
 	cmp r0, r1
