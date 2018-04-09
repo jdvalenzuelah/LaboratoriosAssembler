@@ -32,7 +32,7 @@ valor: .word 0
 .type main, %function
 .extern printf, scanf
 
-menu:
+printmenu:
 	ldr r0, =menu
 	bl printf
 	b main
@@ -43,7 +43,7 @@ sumar:
 	ldr r4, [adrvalor]
 	add r6, r4, r5
 	str r4, [r6]
-	b menu
+	b printmenu
 
 
 main: 
