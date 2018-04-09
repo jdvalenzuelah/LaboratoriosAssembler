@@ -53,9 +53,19 @@ main:
 	ldr r1, =opcion
 	bl scanf
 
+<<<<<<< HEAD
 	ldr r0, =opcion
 	bl printf
 	
+=======
+	ldr r1, =operando
+
+	ldr r0, =suma
+	cmp r0, r1
+	ldreq r0, =menu
+	bleq printf
+
+>>>>>>> f80c8b0578eeb1a83c5745d2c53abe494ce0e790
 	/* Opcion para salir */
 	ldr r0, =salir
 	cmp r1, r0
@@ -74,7 +84,11 @@ main:
 	ldreq r5, =b
 	bleq scanf
 	beq sumar*/
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> f80c8b0578eeb1a83c5745d2c53abe494ce0e790
 salida:
 	/* salida correcta */
 	mov r0, #0
