@@ -33,7 +33,7 @@ main:
 	ldr r1, =opcionSeleccionada @Guardamos la opcion en memoria
 	bl scanf
 
-	mov r1, 0
+	mov r1, #0
 
 	/* Opcion suma */
 	ldr r0, =opcionSeleccionada
