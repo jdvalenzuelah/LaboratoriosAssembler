@@ -12,8 +12,8 @@ menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* 
 formatoEntrada: .asciz "%s"
 
 /* Valores almacenados */
-opcionSeleccionada: .asciz "%s"
-prueba: .asciz "\n %s \n"
+opcionSeleccionada: .asciz "%c"
+prueba: .asciz "\n %c \n"
 /* --------------------------------------------------------------- */
 
 /*  ------------------ Funcion main del programa ----------------- */
