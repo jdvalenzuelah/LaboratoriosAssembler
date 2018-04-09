@@ -21,7 +21,7 @@ resta: .asciz "-"
 multiplicacion: .asciz "*"
 salir: .asciz "q"
 
-
+sumarifs: .asciz "+"
 
 valor: .word 0
 
