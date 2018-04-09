@@ -14,12 +14,11 @@ b: .asciz "%d"
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 opcion: .asciz "%s"
 operando: .string "%d"
-prueba: .asciz "Igual"
 /* Operandos */
-suma: .asciz "+"
-resta: .asciz "-"
-multiplicacion: .asciz "*"
-salir: .asciz "q"
+suma: .string "+"
+resta: .string "-"
+multiplicacion: .string "*"
+salir: .string "q"
 
 valor: .word 0
 
