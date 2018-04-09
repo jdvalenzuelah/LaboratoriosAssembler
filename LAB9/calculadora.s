@@ -7,7 +7,7 @@ Organizacion de computadoras y assembler
 .data
 .align 2
 
-a: .word 0
+a: .asciz "%s"
 
 /* Formatos para ingreso de datos */
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
@@ -49,7 +49,7 @@ sumar:
 
 	@Seleccion de opcion del programa
 	ldr r0, =opcion
-	ldr r1, =b
+	ldr r1, =a
 	bl scanf
 
 	/* Opcion para salir */
@@ -60,7 +60,7 @@ sumar:
 
 	/* Opcion para suma */
 	ldr r0, =suma
-	ldr r1, =b
+	ldr r1, =a
 	bl scanf
 	cmp r1, r0
 	beq sumar
