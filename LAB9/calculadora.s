@@ -10,7 +10,7 @@ Organizacion de computadoras y assembler
 /* Formatos para ingreso de datos */
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 formatoEntrada: .asciz "%s"
-
+strSuma: .asciz "+"
 /* Valores almacenados */
 opcionSeleccionada: .asciz "%s"
 prueba: .asciz "\n %d \n"
@@ -37,8 +37,8 @@ main:
 
 	/* Opcion suma */
 	ldr r0, =opcionSeleccionada
-	@ldr r0, [r0]
-	cmp r0, #'+'
+	ldr r2, =strSuma
+	cmp r0, r2
 	addeq r1, r1, #1
 
 	ldr r0, =prueba
