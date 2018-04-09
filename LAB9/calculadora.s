@@ -11,12 +11,15 @@ menu: .asciz "Ingrese una opcion a trabjar. \n	+ para suma \n	- para resta \n	* 
 /*Funcion principal el programa*/
 .text
 .global main
-.align , %function
-.extern
-.type main, printf
+.align 2
+.type main, %function
+.extern printf
 
 main: 
 	stmfd sp!, {lr} /*link register*/
+
+	ldr r0, =menu
+	bl printf
 
 	/* salida correcta */
 	mov r0, #0
