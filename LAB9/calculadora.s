@@ -53,6 +53,9 @@ main:
 	ldr r1, =a
 	bl scanf
 
+	mov r0, r1
+	bl printf
+
 
 	/* Opcion para salir */
 	ldr r0, =salir
