@@ -49,31 +49,12 @@ main:
 	bl printf
 
 	@Seleccion de opcion del programa
-	ldr r0, =opcion
-	ldr r1, =a
+	ldr r0, =a
+	ldr r1, =opcion
 	bl scanf
 
+	ldr r0, =opcion
 	bl printf
-
-
-	/* Opcion para salir */
-	ldr r0, =salir
-	cmp r1, r0
-	ldreq r0, =prueba
-	bleq printf
-	@beq salida @Salir del programa
-
-	/* Opcion para suma */
-	ldr r0, =suma
-	cmp r1, r0
-	ldreq r0, =prueba
-	bleq printf
-
-	/*
-	ldreq r0, =operando
-	ldreq r5, =b
-	bleq scanf
-	beq sumar*/
 
 	
 
