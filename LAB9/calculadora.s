@@ -51,11 +51,9 @@ main:
 	ldr r1, =opcion
 	bl scanf
 
-<<<<<<< HEAD
 	ldr r0, =opcion
 	bl printf
-	
-=======
+
 	ldr r1, =operando
 
 	ldr r0, =suma
