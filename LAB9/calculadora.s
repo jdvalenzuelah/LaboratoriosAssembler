@@ -6,8 +6,8 @@ Organizacion de computadoras y assembler
 /* Datos con lo que se trabajara */
 .data
 .align 2
-menu: .asciz "Ingrese una opcion a trabjar. \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
-
+menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
+entrada: .asciz "%"
 /*Funcion principal el programa*/
 .text
 .global main
@@ -18,8 +18,19 @@ menu: .asciz "Ingrese una opcion a trabjar. \n	+ para suma \n	- para resta \n	* 
 main: 
 	stmfd sp!, {lr} /*link register*/
 
+	@Mostrar el menu
 	ldr r0, =menu
 	bl printf
+
+	@Entrada de Datos
+	ldr r0, =entrada
+	bl scanf
+
+
+
+
+
+
 
 	/* salida correcta */
 	mov r0, #0
