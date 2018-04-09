@@ -49,7 +49,7 @@ sumar:
 main: 
 	stmfd sp!, {lr} /*link register*/
 
-	b menu
+	b printmenu
 
 	@Seleccion de opcion del programa
 	ldr r0, =opcion
