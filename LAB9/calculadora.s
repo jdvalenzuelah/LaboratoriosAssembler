@@ -135,7 +135,7 @@ main:
 	/* Salir */
 	cmp r5, #5
 	beq salida
-	bnq
+	bne invalida
 
 @Funcion para salir
 salida:
