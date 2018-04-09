@@ -15,14 +15,10 @@ opcion: .asciz "%s"
 suma: .asciz "+"
 resta: .asciz "-"
 multiplicacion: .asciz "*"
-salr: .asciz "q"
+salir: .asciz "q"
 operando: .asciz "%d"
-<<<<<<< HEAD
-
-
-=======
 valor: .word 0
->>>>>>> 6f4ccb39d0e53f52811bb2ea1e9675a61fb9d71d
+
 /*Funcion principal el programa*/
 .text
 .global main
@@ -30,9 +26,19 @@ valor: .word 0
 .type main, %function
 .extern printf, scanf
 
+
+
 main: 
 	stmfd sp!, {lr} /*link register*/
-entradaNumero: 
+
+/* Funcion para suma de datos*/
+suma:
+	ldr r4, =a
+	ldr r0, [r4]	/*guardamos el valor de a en el registro r4*/
+	add r5, r4, r4
+	ldr r4, = valor
+	str r5, [r4]
+
 	/*
 	r2 = almacenamiento de datos
 	*/
@@ -41,29 +47,33 @@ entradaNumero:
 	ldr r0, =menu
 	bl printf
 
-	@Entrada de Datos
+	@Seleccion de opcion del programa
 	ldr r0, =opcion
-	ldr r2, =b
+	ldr r1, =b
 	bl scanf
 
-	ldr r1, =suma
+	/* Opcion para salir */
+	ldr r0, =salir
 	ldr r1, [r1]
+	cmp r1, r0
+	beq salir @Salir del programa
 
-	cmp r2, r1
+	/* Opcion para suma */
+	ldr r0, =suma
+	ldr r1, =b
+	bl scanf
+	cmp r1, r0
+	beq suma
+
 
 
 
 
 	
+salir:
 	/* salida correcta */
 	mov r0, #0
 	mov r3, #0
 	ldmfd sp!, {lr}	/* R13 = SP */
 	bx lr
 
-suma:
-	ldr r4, =a
-	ldr r0, [r4]	/*guardamos el valor de a en el registro r4*/
-	add r5, r4, r4
-	ldr r4, = valor
-	str r5, [r4]
