@@ -32,10 +32,6 @@ valor: .word 0
 .type main, %function
 .extern printf, scanf
 
-printmenu:
-	ldr r0, =menu
-	bl printf
-	b main
 
 /* Funcion para suma de datos*/
 sumar:
@@ -43,13 +39,15 @@ sumar:
 	ldr r4, [r4]
 	add r6, r4, r5
 	str r4, [r6]
-	b printmenu
+	b main
 
 
 main: 
 	stmfd sp!, {lr} /*link register*/
 
-	b printmenu
+	ldr r0, =menu
+	bl printf
+	b main
 
 	@Seleccion de opcion del programa
 	ldr r0, =opcion
