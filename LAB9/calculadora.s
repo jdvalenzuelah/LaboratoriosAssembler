@@ -68,7 +68,7 @@ main:
 	ldreq r0, =operando
 	ldreq r5, =b
 	bleq scanf
-	beq sumareq
+	beq sumar
 
 	
 
