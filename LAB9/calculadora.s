@@ -12,7 +12,7 @@ menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* 
 formatoEntrada: .asciz "%s"
 strSuma: .byte '+'
 /* Valores almacenados */
-opcionSeleccionada: .byte 's'
+opcionSeleccionada: .asciz "%s"
 prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
@@ -37,7 +37,7 @@ main:
 
 	/* Opcion suma */
 	ldr r0, =opcionSeleccionada
-	ldrb r0, [r0]
+	ldrb r0, [r0, #0]
 	ldr r2, =strSuma
 	ldrb r2, [r2]
 
