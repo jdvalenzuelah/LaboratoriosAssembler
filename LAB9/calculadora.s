@@ -16,7 +16,7 @@ entrada: .asciz "%"
 .global main
 .align 2
 .type main, %function
-.extern printf
+.extern printf, scanf
 
 main: 
 	stmfd sp!, {lr} /*link register*/
