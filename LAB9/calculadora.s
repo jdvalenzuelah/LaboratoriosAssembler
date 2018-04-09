@@ -47,7 +47,6 @@ main:
 
 	ldr r0, =menu
 	bl printf
-	b main
 
 	@Seleccion de opcion del programa
 	ldr r0, =opcion
