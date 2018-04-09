@@ -60,7 +60,7 @@ sumar:
 
 	/* Opcion para suma */
 	ldr r0, =suma
-	cmp r1, "+"
+	cmp r1, r0
 	ldreq r0, =menu
 	bleq printf
 
