@@ -13,7 +13,7 @@ b: .asciz "%d"
 /* Formatos para ingreso de datos */
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 opcion: .asciz "%s"
-operando: .asciz "%d"
+operando: .string "%d"
 prueba: .asciz "Igual"
 /* Operandos */
 suma: .asciz "+"
