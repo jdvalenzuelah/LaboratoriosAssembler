@@ -40,7 +40,7 @@ printmenu:
 /* Funcion para suma de datos*/
 sumar:
 	ldr r4, adrvalor
-	ldr r4, [adrvalor]
+	ldr r4, [r4]
 	add r6, r4, r5
 	str r4, [r6]
 	b printmenu
