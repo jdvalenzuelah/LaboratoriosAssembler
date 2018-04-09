@@ -9,7 +9,9 @@ Organizacion de computadoras y assembler
 
 /* Formatos para ingreso de datos */
 menu: .asciz "	1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. Mostrar resultado. \n	5. salir del programa\nIngrese una opcion a trabjar: "
+mensajeOperando: .asciz "\nIngrese un numero: "
 formatoEntrada: .asciz "%d"
+
 
 /* Valores almacenados */
 opcionSeleccionada: .word 0
@@ -24,6 +26,10 @@ operando: .word 0
 .extern printf @printf de la libreria de c para imprimir
 
 suma:
+	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
+	mov r6, 0 @Iniciamos r6 en 0
+	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
+
 	ldr r0, =valor @Direccion del valor
 	ldr r1, [r0] @Cargamos valor a r1
 	ldr r2, =operando @Cargamos direccion de operando a r2
@@ -51,6 +57,8 @@ main:
 	ldr r0, [r0]
 	cmp r0, #1
 	
+	ldreq r0, =mensajeOperando
+	bleq printf
 	ldreq r0, =formatoEntrada
 	ldreq r1, =operando
 	bleq scanf
