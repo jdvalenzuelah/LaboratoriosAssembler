@@ -8,11 +8,10 @@ Organizacion de computadoras y assembler
 .align 2
 
 /* Formatos para ingreso de datos */
-menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
-formatoEntrada: .asciz "%s"
-strSuma: .byte '+'
+menu: .asciz "1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. salir del programa\nIngrese una opcion a trabjar:"
+formatoEntrada: .asciz "%d"
 /* Valores almacenados */
-opcionSeleccionada: .asciz "%s"
+opcionSeleccionada: .asciz "%d"
 prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
@@ -33,19 +32,6 @@ main:
 	ldr r1, =opcionSeleccionada @Guardamos la opcion en memoria
 	bl scanf
 
-	mov r1, #0
-
-	/* Opcion suma */
-	ldr r0, =opcionSeleccionada
-	ldrb r0, [r0, #0]
-	ldr r2, =strSuma
-	ldrb r2, [r2]
-
-	cmp r0, r2
-	addeq r1, r1, #1
-
-	ldr r0, =prueba
-	bl printf
 
 
 	
