@@ -6,6 +6,9 @@ Organizacion de computadoras y assembler
 /* Datos con lo que se trabajara */
 .data
 .align 2
+
+a: .word 0
+
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 entrada: .asciz "%"
 /*Funcion principal el programa*/
@@ -24,6 +27,7 @@ main:
 
 	@Entrada de Datos
 	ldr r0, =entrada
+	ldr r1, =a
 	bl scanf
 
 
