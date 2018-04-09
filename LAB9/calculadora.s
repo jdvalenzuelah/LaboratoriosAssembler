@@ -62,7 +62,8 @@ sumar:
 	ldr r0, =suma
 	ldr r1, [r1]
 	cmp r1, r0
-	beq sumar
+	ldreq r0, =menu
+	bleq printf
 
 
 
