@@ -9,7 +9,9 @@ Organizacion de computadoras y assembler
 
 /* Formatos para ingreso de datos */
 menu: .asciz "	1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. Mostrar resultado. \n	5. salir del programa\nIngrese una opcion a trabjar: "
-mensajeOperando: .asciz "\nIngrese un numero: "
+mensajeOperando: .asciz "Ingrese un numero: "
+mensajeResultado: .asciz "El resultado es: %d"
+mensajeOpcionInvalida: .asciz "Ingrese una opcion valida"
 formatoEntrada: .asciz "%d"
 
 
@@ -25,6 +27,7 @@ operando: .word 0
 .global main
 .extern printf @printf de la libreria de c para imprimir
 
+@Funcion de suma
 suma:
 	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
 	mov r6, #0 @Iniciamos r6 en 0
@@ -36,8 +39,47 @@ suma:
 	ldr r2, [r2] @Cargamos valor a r2
 	add r1, r1, r2 @r1 = r1 + r2
 	str r1, [r0] @valor = r1
-	b main
+	b resultado @regresmaos al main
 
+@Funcion de resta
+resta:
+	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
+	mov r6, #0 @Iniciamos r6 en 0
+	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
+
+	/* Aca va la resta*/
+
+	b resultado @regresmaos al main
+
+@Funcion para la multiplicacion
+multiplicacion:
+	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
+	mov r6, #0 @Iniciamos r6 en 0
+	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
+
+	/* Aca va la multiplicacion*/
+
+	b resultado @regresmaos al main
+
+@Funcion para mostrar el resultado
+resultado:
+	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
+	mov r6, #0 @Iniciamos r6 en 0
+	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
+	ldr r0, =mensajeResultado @Mensaje de Resultado
+	ldr r1, =valor @Cargamos valor
+	ldr r1, [r1]
+	bl printf @Imprimimos el valor
+	b main @Regresamos al main
+
+@Funcion de opcion invalida
+invalida:
+	ldr r5, =opcionSeleccionada @Cargamos direccion de opcionSeleccionada
+	mov r6, #0 @Iniciamos r6 en 0
+	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
+	ldr r0, =mensajeOpcionInvalida
+	bl printf
+	b main
 
 main:
 	stmfd sp!, {lr}	/* SP = R13 link register */
@@ -52,20 +94,51 @@ main:
 	ldr r1, =opcionSeleccionada @Guardamos la opcion en memoria
 	bl scanf
 
-	/* Opcion de suma */
+	/* Cargamos la opcion seleccionada */
 	ldr r0, =opcionSeleccionada
 	ldr r0, [r0]
-	cmp r0, #1
-	
+
+	/* Opcion de suma */
+	cmp r0, #1 @Comparacion con opcion
+	@Pedimos Operando
 	ldreq r0, =mensajeOperando
-	bleq printf
+	bleq printf @Imprimimos mensaje
 	ldreq r0, =formatoEntrada
 	ldreq r1, =operando
-	bleq scanf
-	beq suma
+	bleq scanf @Guardamos el valor
+	beq suma @Vamos a la funcion ingresada
 
+	/* Opcion de resta */
+	cmp r0, #2 @Comparacion con opcion
+	@Pedimos Operando
+	ldreq r0, =mensajeOperando
+	bleq printf @Imprimimos mensaje
+	ldreq r0, =formatoEntrada
+	ldreq r1, =operando
+	bleq scanf @Guardamos el valor
+	beq resta @Vamos a la funcion ingresada
 
+	/* Opcion de multiplicacion */
+	cmp r0, #3 @Comparacion con opcion
+	@Pedimos Operando
+	ldreq r0, =mensajeOperando
+	bleq printf @Imprimimos mensaje
+	ldreq r0, =formatoEntrada
+	ldreq r1, =operando
+	bleq scanf @Guardamos el valor
+	beq multiplicacion @Vamos a la funcion ingresada
 
+	/* Mostrar el resultado */
+	cmp r0, #4
+	beq resultado
+
+	/* Salir */
+	cmp r5, #5
+	beq salida
+	bnq
+
+@Funcion para salir
+salida:
 	/* salida correcta */
 	mov r0, #0
 	mov r3, #0
