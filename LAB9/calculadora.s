@@ -52,18 +52,8 @@ sumar:
 	ldr r1, =a
 	bl scanf
 
-	/* Opcion para salir */
-	ldr r0, =salir
-	ldr r1, [r1]
-	cmp r1, r0
-	beq salida @Salir del programa
+	
 
-	/* Opcion para suma */
-	ldr r0, =suma
-	ldr r1, [r1]
-	cmp r1, r0
-	ldreq r0, =menu
-	bleq printf
 
 
 
