@@ -10,8 +10,8 @@ Organizacion de computadoras y assembler
 /* Formatos para ingreso y salida de datos */
 menu: .asciz "	1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. Mostrar resultado. \n	5. salir del programa\nIngrese una opcion a trabjar: "
 mensajeOperando: .asciz "Ingrese un numero: "
-mensajeResultado: .asciz "El resultado es: %d\n"
-mensajeOpcionInvalida: .asciz "Ingrese una opcion valida\n"
+mensajeResultado: .asciz "El resultado es: %d\n\n"
+mensajeOpcionInvalida: .asciz "Ingrese una opcion valida\n\n"
 formatoEntrada: .asciz "%d"
 
 
