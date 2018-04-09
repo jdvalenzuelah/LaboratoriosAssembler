@@ -10,7 +10,7 @@ Organizacion de computadoras y assembler
 a: .word 0
 
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
-entrada: .asciz "%"
+entrada: .asciz "%d"
 /*Funcion principal el programa*/
 .text
 .global main
