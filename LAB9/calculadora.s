@@ -8,11 +8,17 @@ Organizacion de computadoras y assembler
 .align 2
 
 a: .word 0
-b: .asciz "%s"
 
+/* Formatos para ingreso de datos */
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
 opcion: .asciz "%s"
+suma: .asciz "+"
+resta: .asciz "-"
+multiplicacion: .asciz "*"
+salr: .asciz "q"
 operando: .asciz "%d"
+
+
 /*Funcion principal el programa*/
 .text
 .global main
@@ -22,6 +28,10 @@ operando: .asciz "%d"
 
 main: 
 	stmfd sp!, {lr} /*link register*/
+entradaNumero: 
+	/*
+	r2 = almacenamiento de datos
+	*/
 
 	@Mostrar el menu
 	ldr r0, =menu
@@ -29,14 +39,17 @@ main:
 
 	@Entrada de Datos
 	ldr r0, =opcion
-	ldr r1, =b
+	ldr r2, =b
 	bl scanf
 
-	@imprime lo recibido
-	ldr r0, = opcion
-	ldr r1, = a
+	ldr r1, =suma
 	ldr r1, [r1]
-	bl printf
+
+	cmp r2, r1
+
+
+
+
 	
 	/* salida correcta */
 	mov r0, #0
