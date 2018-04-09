@@ -57,7 +57,9 @@ main:
 	/* Opcion para salir */
 	ldr r0, =salir
 	cmp r1, r0
-	beq salida @Salir del programa
+	ldreq r0, =prueba
+	bleq printf
+	@beq salida @Salir del programa
 
 	/* Opcion para suma */
 	ldr r0, =suma
