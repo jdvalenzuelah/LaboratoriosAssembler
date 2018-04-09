@@ -53,8 +53,12 @@ main:
 	ldr r1, =opcion
 	bl scanf
 
-	ldr r0, =opcion
-	bl printf
+	ldr r1, =operando
+
+	ldr r0, =suma
+	cmp r0, r1
+	ldreq r0, =menu
+	bleq printf
 
 	
 
