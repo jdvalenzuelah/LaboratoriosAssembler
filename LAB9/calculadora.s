@@ -10,12 +10,12 @@ Organizacion de computadoras y assembler
 /* Formatos para ingreso de datos */
 menu: .asciz "	1. para suma \n	2. para resta \n	3. para multiplicacion \n	3. para mostrar el resultado almacenado \n	4. Mostrar resultado. \n	5. salir del programa\nIngrese una opcion a trabjar: "
 formatoEntrada: .asciz "%d"
+
 /* Valores almacenados */
 opcionSeleccionada: .word 0
 valor: .word 0
 operando: .word 0
 
-prueba: .asciz "\n %d \n"
 /* --------------------------------------------------------------- */
 
 /*  ------------------ Funcion main del programa ----------------- */
@@ -54,6 +54,7 @@ main:
 	ldreq r0, =formatoEntrada
 	ldreq r1, =operando
 	bleq scanf
+	beq suma
 
 
 
