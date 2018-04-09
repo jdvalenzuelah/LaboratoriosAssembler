@@ -10,7 +10,8 @@ Organizacion de computadoras y assembler
 a: .word 0
 
 menu: .asciz "Ingrese una opcion a trabjar: \n	+ para suma \n	- para resta \n	* para multiplicacion \n	= para mostrar el resultado almacenado \n	q salir del programa\n"
-entrada: .asciz "%d"
+opcion: .asciz "%s"
+operando: .asciz "%d"
 /*Funcion principal el programa*/
 .text
 .global main
@@ -26,12 +27,12 @@ main:
 	bl printf
 
 	@Entrada de Datos
-	ldr r0, =entrada
+	ldr r0, =opcion
 	ldr r1, =a
 	bl scanf
 
 	@imprime lo recibido
-	ldr r0, = entrada
+	ldr r0, = opcion
 	ldr r1, = a
 	ldr r1, [r1]
 	bl printf
