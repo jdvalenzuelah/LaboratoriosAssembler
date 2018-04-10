@@ -136,9 +136,9 @@ main:
 	cmp r0, #5
 	bne invalida
 
-	moveq r0, #0
-	moveq r3, #0
-	ldmfdeq sp!, {lr}	/* R13 = SP */
-	bxeq lr
+	mov r0, #0
+	mov r3, #0
+	ldmfd sp!, {lr}	/* R13 = SP */
+	bx lr
 
 /* --------------------------------------------------------------- */
