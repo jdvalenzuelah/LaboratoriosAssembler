@@ -1,6 +1,8 @@
 /*
 Universidad del Valle de Guatemala
 Organizacion de computadoras y assembler
+autor: David Valenzuela				171001
+autor: Marcos Gutierrez				17909
 */
 
 /* ---------------- Datos con lo que se trabajara ---------------- */
@@ -48,7 +50,13 @@ resta:
 	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
 
 	/* Aca va la resta*/
-
+	ldr r0, = valor /*direccionamos el valor al r0*/
+	ldr r1, [r0] @Cargamos valor a r1
+	ldr r2, =operando /*Cargamos direccion de operando a r2*/ 
+	ldr r2, [r2] /*cargamos el valor de r2*/
+	cmp r2, r1 /*ciclo para evitar numeros negativos*/    
+	rsb r1, r1, r2 /*r1 = r1-r2*/
+	str r1, [r0]
 	b resultado @regresmaos al main
 
 @Funcion para la multiplicacion
@@ -58,7 +66,11 @@ multiplicacion:
 	str r6, [r5] @Reseteamos el valor de opcionSeleccionada
 
 	/* Aca va la multiplicacion*/
-
+	ldr r0, = valor /*direccionamos el valor al r0*/
+	ldr r1, [r0] @Cargamos valor a r1
+	ldr r2, =operando /*Cargamos direccion de operando al r2*/
+	mul r1, r2, r1 /* r1 = r2 * r1 */
+	str r1 /*valor de r1*/
 	b resultado @regresmaos al main
 
 @Funcion para mostrar el resultado
