@@ -134,12 +134,8 @@ main:
 
 	/* Salir */
 	cmp r0, #5
-	beq salida
 	bne invalida
 
-@Funcion para salir
-salida:
-	/* salida correcta */
 	mov r0, #0
 	mov r3, #0
 	ldmfd sp!, {lr}	/* R13 = SP */
