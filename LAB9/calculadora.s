@@ -57,7 +57,7 @@ resta:
 	cmp r2, r1 /*ciclo para evitar numeros negativos*/    
 	rsb r1, r1, r2 /*r1 = r1-r2*/
 	str r1, [r0]
-	b resultado @regresmaos al main
+	b resultado @Mostramos el resultado
 
 @Funcion para la multiplicacion
 multiplicacion:
@@ -70,8 +70,8 @@ multiplicacion:
 	ldr r1, [r0] @Cargamos valor a r1
 	ldr r2, =operando /*Cargamos direccion de operando al r2*/
 	mul r1, r2, r1 /* r1 = r2 * r1 */
-	str r1 /*valor de r1*/
-	b resultado @regresmaos al main
+	str r1, r0 /*valor de r1*/
+	b resultado @Mostramos el resultado
 
 @Funcion para mostrar el resultado
 resultado:
@@ -82,7 +82,7 @@ resultado:
 	ldr r1, =valor @Cargamos valor
 	ldr r1, [r1]
 	bl printf @Imprimimos el valor
-	b main @Regresamos al main
+	b main @Mostramos el resultado
 
 @Funcion de opcion invalida
 invalida:
