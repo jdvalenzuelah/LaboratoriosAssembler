@@ -70,7 +70,7 @@ multiplicacion:
 	ldr r1, [r0] @Cargamos valor a r1
 	ldr r2, =operando /*Cargamos direccion de operando al r2*/
 	mul r1, r2, r1 /* r1 = r2 * r1 */
-	str r1, r0 /*valor de r1*/
+	str r1, [r0] /*valor de r1*/
 	b resultado @Mostramos el resultado
 
 @Funcion para mostrar el resultado
