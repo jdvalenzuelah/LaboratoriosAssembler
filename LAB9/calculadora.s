@@ -69,6 +69,7 @@ multiplicacion:
 	ldr r0, = valor /*direccionamos el valor al r0*/
 	ldr r1, [r0] @Cargamos valor a r1
 	ldr r2, =operando /*Cargamos direccion de operando al r2*/
+	ldr r2, [r2] @Cargamos el valor del operando
 	mul r1, r2, r1 /* r1 = r2 * r1 */
 	str r1, [r0] /*valor de r1*/
 	b resultado @Mostramos el resultado
