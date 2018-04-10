@@ -55,7 +55,7 @@ resta:
 	ldr r2, =operando /*Cargamos direccion de operando a r2*/ 
 	ldr r2, [r2] /*cargamos el valor de r2*/
 	cmp r2, r1 /*ciclo para evitar numeros negativos*/    
-	rsb r1, r1, r2 /*r1 = r1-r2*/
+	rsb r1, r2, r1 /*r1 = r1-r2*/
 	str r1, [r0]
 	b resultado @Mostramos el resultado
 
