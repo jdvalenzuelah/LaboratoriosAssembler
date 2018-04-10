@@ -133,7 +133,7 @@ main:
 	beq resultado
 
 	/* Salir */
-	cmp r5, #5
+	cmp r0, #5
 	beq salida
 	bne invalida
 
