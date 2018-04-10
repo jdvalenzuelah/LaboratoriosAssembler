@@ -149,6 +149,7 @@ main:
 	cmp r0, #5
 	bne invalida
 
+	pop {ip, pc} @pop del ip y pc al stack
 	mov r0, #0
 	mov r3, #0
 	ldmfd sp!, {lr}	/* R13 = SP */
