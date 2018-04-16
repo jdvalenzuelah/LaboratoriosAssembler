@@ -8,7 +8,7 @@ autor: Juan Jose Navas
 .data
 .align 2
 mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espacios en blaco)\n"
-formatoEntrada: .asciz "%s"
+formatoEntrada: .string "%s"
 nombre: .string "%s"
 resultado: .asciz " "
 
