@@ -32,8 +32,8 @@ main:
 	bl scanf
 
 	ldr r0, =prueba
-	ldr r1, =nombre
-	ldrb r1, [r1, #0]
+	ldr r2, =nombre
+	ldrb r1, [r2, #0]
 	bl printf
 
 
