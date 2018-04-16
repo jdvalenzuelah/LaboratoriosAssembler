@@ -10,7 +10,7 @@ autor: Juan Jose Navas
 mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espacios en blaco)\n"
 formatoEntrada: .asciz "%s"
 nombre: .asciz "%s"
-prueba: .asciz "%d"
+prueba: .asciz "%s"
 letrasMinusculas: .byte 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' 
 letrasMayusculas: .byte 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
 resultado: .asciz " "
@@ -33,12 +33,6 @@ main:
 
 	ldr r0, =prueba
 	ldr r1, =nombre
-	bl printf
-
-
-
-
-
 	bl printf
 
 
