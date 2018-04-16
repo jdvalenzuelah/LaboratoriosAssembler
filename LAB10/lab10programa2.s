@@ -34,9 +34,20 @@ main:
 	ldr r2, =letrasMinusculas @Letras Mayuculas
 	ldr r3, =letrasMayusculas @Letras minusculas
 	ldr r4, =nombre @Nombre Ingresado
+	mov r5, #0
+	
+ciclo:
+	ldr r1, [r4]
+	ldr r0, =formatoEntrada
+	bl printf
+	add r4, r4, #8
+	add r5, r5, #1
+	cmp r5, #4
+	bne ciclo
 
-	ldr r0, =nombre
-	ldr r0, [r0, #8]
+
+
+
 	bl printf
 
 
