@@ -36,7 +36,7 @@ main:
 	ldr r4, =nombre @Nombre Ingresado
 
 	ldr r0, =nombre
-	ldr r0, [r0, #1]
+	ldr r0, [r0, #4]
 	bl printf
 
 
