@@ -9,7 +9,7 @@ autor: Juan Jose Navas
 .align 2
 mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espacios en blaco)\n"
 formatoEntrada: .asciz "%s"
-entrada: "%d"
+entrada: .asciz "%s"
 resultado: .asciz " "
 
 .text
