@@ -33,6 +33,7 @@ main:
 
 	ldr r0, =prueba
 	ldr r1, =nombre
+	ldrb r1, [r1, #0]
 	bl printf
 
 
