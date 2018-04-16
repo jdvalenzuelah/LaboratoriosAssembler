@@ -7,7 +7,9 @@ autor: Juan Jose Navas
 
 .data
 .align 2
-mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espacios en blaco)"
+mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espacios en blaco)\n"
+formatoEntrada: .asciz "%s"
+entrada: "%d"
 resultado: .asciz " ";
 
 .text
@@ -20,6 +22,11 @@ main:
 	/* Imprimimos inicio del porgrama */
 	ldr r0, =mensaje
 	bl printf
+
+	/* Entrada de datos */
+	ldr r0, =formatoEntrada
+	ldr r1, =entrada
+	bl scanf
 
 		/* salida correcta */
 	mov r0, #0
