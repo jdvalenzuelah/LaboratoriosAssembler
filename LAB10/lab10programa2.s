@@ -11,6 +11,7 @@ mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espac
 formatoEntrada: .asciz "%s"
 nombre: .asciz "%s"
 letrasMinusculas: .byte 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' 
+letrasMayusculas: .byte 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
 resultado: .asciz " "
 
 .text
@@ -29,8 +30,17 @@ main:
 	ldr r1, =nombre
 	bl scanf
 
-	ldr r0, =letrasMinusculas
+	/* Recorrer el vector */
+	ldr r2, =letrasMinusculas @Letras Mayuculas
+	ldr r3, =letrasMayusculas @Letras minusculas
+	ldr r4, =nombre @Nombre Ingresado
+
+	ldr r0, =nombre
+	ldr r0, [r0, #1]
 	bl printf
+
+
+
 
 	/* salida correcta */
 	mov r0, #0
