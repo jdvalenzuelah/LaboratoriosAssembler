@@ -149,6 +149,6 @@ main:
 	cmp r0, #5
 	bne invalida
 
-	popeq {ip, pc} @pop del ip y pc al stack
+	popeq {ip, pc} @pop del ip y pc al stac
 
 /* --------------------------------------------------------------- */
