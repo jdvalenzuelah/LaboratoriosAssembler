@@ -32,6 +32,7 @@ main:
 	bl scanf
 
 	ldr r0, =prueba
+	ldr r1, =nombre
 	bl printf
 
 
