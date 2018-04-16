@@ -9,7 +9,8 @@ autor: Juan Jose Navas
 .align 2
 mensaje: .asciz "Ingrese nombre en minusculas (Maximo 10 caracteres, y sin espacios en blaco)\n"
 formatoEntrada: .asciz "%s"
-entrada: .asciz "%s"
+nombre: .asciz "%s"
+letrasMinusculas: .byte 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' 
 resultado: .asciz " "
 
 .text
@@ -25,8 +26,11 @@ main:
 
 	/* Entrada de datos */
 	ldr r0, =formatoEntrada
-	ldr r1, =entrada
+	ldr r1, =nombre
 	bl scanf
+
+	ldr r0, =letrasMinusculas
+	bl printf
 
 	/* salida correcta */
 	mov r0, #0
