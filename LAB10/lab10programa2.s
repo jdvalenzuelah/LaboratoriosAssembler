@@ -21,4 +21,8 @@ main:
 	ldr r0, =mensaje
 	bl printf
 
-	popeq {ip, pc} @pop del ip y pc al stac
+		/* salida correcta */
+	mov r0, #0
+	mov r3, #0
+	ldmfd sp!, {lr}	/* R13 = SP */
+	bx lr
