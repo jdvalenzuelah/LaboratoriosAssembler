@@ -28,8 +28,9 @@ main:
 	ldr r1, =entrada
 	bl scanf
 
-		/* salida correcta */
+	/* salida correcta */
 	mov r0, #0
 	mov r3, #0
 	ldmfd sp!, {lr}	/* R13 = SP */
 	bx lr
+
