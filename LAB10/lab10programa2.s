@@ -31,7 +31,7 @@ main:
 
 	ldr r5, =nombre
 	ldr r0, =formatoEntrada
-	ldrb r1, [r5, #1]
+	ldrb r1, [r5], #1
 	bl printf
 
 
