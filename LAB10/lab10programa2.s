@@ -28,6 +28,25 @@ main:
 	ldr r1, =nombre
 	bl scanf
 
+	/* Recorrido de el string*/
+	mov r7, #0
+	mov r8, #32
+	ldr r5, =nombre
+ciclo:
+	ldr r6, [r5, r7]
+	subs r6, r6, r8 @Cambio a mayuscula
+	ldr r9, =resultado
+	str r6, [r9]
+	add r7, r7, #1
+	cmp r7, #5
+	bne ciclo
+
+	/* Imprimimos el resultado */
+	ldr r0, =formatoEntrada
+	ldr r1, =resultado
+	bl printf
+
+
 	
 
 	/* salida correcta */
