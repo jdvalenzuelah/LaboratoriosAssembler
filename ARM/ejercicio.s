@@ -10,6 +10,10 @@ salida: .asciz "Promedio es: %d\n"
 main:
 	stmfd sp!,{lr}
 
+	mov r0, #1
+	mov r1, #2
+	bl promedio
+
 
 	@Salida
 	mov r0,#0
