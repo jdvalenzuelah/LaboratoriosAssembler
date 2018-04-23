@@ -47,9 +47,6 @@ main:
 
 /* exit code */
 exit:
-	@UN LINK variables
-	.unreq winner
-	.unreq cont
 	@OS exit
 	mov r0,#0
 	mov r3,#0
