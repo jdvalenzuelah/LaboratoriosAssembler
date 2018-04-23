@@ -45,8 +45,25 @@ main:
 	ldr r1, =num4
 	bl scanf
 
+	ldr r0, =num1
+	ldr r0, [r0]
+
+	ldr r1, =num2
+	ldr r1, [r1]
+
+	ldr r2, =num3
+	ldr r2, [r2]
+
+	ldr r3, =num4
+	ldr r3, [r3]
+
+	bl promedio
+	mov r1, r0
+	ldr r0, =inputFormat
+	bl printf
+
 /* exit code */
-exit:
+exit:	
 	@OS exit
 	mov r0,#0
 	mov r3,#0

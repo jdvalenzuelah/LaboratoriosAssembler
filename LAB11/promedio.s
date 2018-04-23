@@ -17,7 +17,5 @@ promedio:
 	add r0, r1
 	add r0, r2
 	add r0, r3
-	add r0, r4
 	lsr r0, #2
 	mov pc, lr
-	
