@@ -12,7 +12,7 @@ File contains subroutines and stores the data for the connect 4 game.
  * Promedio de 4 numeros. Parametros de r0 - r4 numeros a sacar el promedio
  * Return: promedio de los cuatro numeros en r0
 */
-.global
+.global promedio
 promedio:
 	add r0, r1
 	add r0, r2
