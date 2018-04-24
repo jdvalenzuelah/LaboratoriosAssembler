@@ -45,7 +45,7 @@ jugar:
 	ldr r2, [r2]
 	ldr r3, =jugador2
 	ldr r3, [r3]
-	mov r0, =dados
+	ldr r0, =dados
 	mov r1, r2
 	mov r2, r3
 	bl printf
