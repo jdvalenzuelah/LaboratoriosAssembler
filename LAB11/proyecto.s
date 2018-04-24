@@ -51,11 +51,8 @@ jugar:
 
 	ldr r0, =ganador
 	bl printf
-	
+
 exit:
-	@UN LINK variables
-	.unreq winner
-	.unreq cont
 	@OS exit
 	mov r0,#0
 	mov r3,#0
