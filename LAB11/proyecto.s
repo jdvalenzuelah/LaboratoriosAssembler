@@ -29,13 +29,13 @@ main:
 	ldr r1, =prueba
 	bl scanf
 jugar:
-	mov r0, #6
+	mov r0, pc
 	bl rand
 	add r0, #1
 	ldr r1, =jugador1
 	str r0, [r1]
 
-	mov r0, #6
+	mov r0, pc
 	bl rand
 	add r0, #1
 	ldr r1, =jugador2
