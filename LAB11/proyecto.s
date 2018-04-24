@@ -7,6 +7,7 @@ Autores:
 girarDadosStr: .asciz "Presione cualquier tecla y enter para girar los dados:\n"
 prueba: .asciz "%s"
 ganador: .asciz "El ganador es: Jugador %d\n"
+dados: .asciz "Jugador 1: %d \nJugador 2: %d\n"
 jugador1: .word 0
 jugador2: .word 0
 
@@ -44,6 +45,10 @@ jugar:
 	ldr r2, [r2]
 	ldr r3, =jugador2
 	ldr r3, [r3]
+	mov r0, =dados
+	mov r1, r2
+	mov r2, r3
+	bl printf
 	cmp r2, r3
 	movgt r1, #1
 	movlt r1, #2
