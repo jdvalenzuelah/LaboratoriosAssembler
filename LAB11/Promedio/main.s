@@ -8,6 +8,7 @@ File contains subroutines and stores the data for the connect 4 game.
 .data
 inputFormat: .asciz "%d"
 inputMessage: .asciz "Ingrese un numero:\n"
+menPromedio: .asciz "El promedio es: %d\n"
 num1: .word 0
 num2: .word 0
 num3: .word 0
@@ -56,10 +57,10 @@ main:
 
 	ldr r3, =num4
 	ldr r3, [r3]
-
 	bl promedio
+
 	mov r1, r0
-	ldr r0, =inputFormat
+	ldr r0, =menPromedio
 	bl printf
 
 /* exit code */
