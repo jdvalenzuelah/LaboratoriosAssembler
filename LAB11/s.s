@@ -26,7 +26,7 @@ main:
 	ldr r3, =addrNota4
 	bl CalculoNotaProyecto @Llamamos a la subrutina
 	@valor de retorno esta en r0, lo movemos a r1
-	mov r1, r0
+	ldr r1, [r0]
 	@Imprimimos el resultado
 	ldr r0, =string
 	bl printf
@@ -59,9 +59,10 @@ CalculoNotaProyecto:
 	vadd.F64 d4, d4, d2 @s4 = s4 + s2
 	vadd.F64 d4, d4, d3 @s4 = s4 + s3
 	@buscar lo restante para llegar a 61
-	vmov d5, #-61
-	vadd d4, d5
-	vmov r0, d4
+	mov d5, #61 @d5 = 61
+	vsub d4, d5, d4 @d4 = d5 - d4
+	@Guardar la direccion en r0
+	vstr d5, [r0]
 	mov pc, lr @Return r0
 
 
