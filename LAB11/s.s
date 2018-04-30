@@ -14,9 +14,8 @@ nota3: .float 15
 nota4: .float 15
 @Nota base para aprovar
 base: .float 61
-result: .word 0
 @String para desplegar el resultado
-string1 .asciz "La nota a obtener en el proyecto es de: %f% \n"
+res: .asciz "* *"
 
 /* Funcion main del programa */
 .text
@@ -40,7 +39,7 @@ main:
 	vcvt.F64.F32 d3, s0
 	vmov r2, r3, d3
 	@Imprimimos el resultado
-	ldr r0, =string1
+	ldr r0, =res
 	bl printf
 
 	@OS exit
