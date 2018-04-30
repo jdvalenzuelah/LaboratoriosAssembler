@@ -19,15 +19,15 @@ calculoNotaProyecto:
 	vcvt.F64.F32 d7, s2
 	vldr s3, [r3]
 	vcvt.F64.F32 d8, s3
-	mov r5, #61
+	/*mov r5, #61
 	vmov s10, r5
-	vcvt.F64.F32 d9, s10
+	vcvt.F64.F32 d9, s10*/
 	@Sumamos todos los valores
 	vadd.F64 d5, d5, d6
 	vadd.F64 d5, d5, d7
 	vadd.F64 d5, d5, d8
 	@Encontramos cuanto falta para llegar a 61
-	vsub.F64 d4, d9, d5
+	vsub.F64 d4, d5, #61
 	ldr r0, =test
 	vmov r2, r3, d9
 	bl printf
