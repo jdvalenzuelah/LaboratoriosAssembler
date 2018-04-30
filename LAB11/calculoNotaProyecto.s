@@ -20,8 +20,8 @@ calculoNotaProyecto:
 	vldr s3, [r3]
 	vcvt.F64.F32 d8, s3
 	mov r5, #61
-	@vmov s4, r5
-	vcvt.F64.F32 d9, r5
+	vmov s10, r5
+	vcvt.F64.F32 d9, s10
 	@Sumamos todos los valores
 	vadd.F64 d5, d5, d6
 	vadd.F64 d5, d5, d7
