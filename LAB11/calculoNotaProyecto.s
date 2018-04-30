@@ -1,8 +1,13 @@
+
+.data
+.align 2
+test: .asciz "Prueba: %f"
+
 /**
  * r0 - r3 contiene la direccion del valor float
 */
 .text
-.globalcCalculoNotaProyecto
+.global calculoNotaProyecto
 calculoNotaProyecto:
 	push {lr}
 	@Cargar los valores punto flotante y convertirlos a B64
