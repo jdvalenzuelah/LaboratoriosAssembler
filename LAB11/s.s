@@ -7,7 +7,7 @@ autor: David Valenzuela				171001
 /* Informacion utilizada */
 .data
 .align 2
-nota1: .float 15
+nota1: .float 10
 nota2: .float 15
 nota3: .float 15
 nota4: .float 15
