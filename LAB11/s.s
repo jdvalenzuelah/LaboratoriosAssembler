@@ -50,18 +50,18 @@ addrNota4: .word nota4
 .global CalculoNotaProyecto
 CalculoNotaProyecto:
 	@Cargar los valores punto flotante
-	vldr s0, [r0]
-	vldr s1, [r1]
-	vldr s2, [r2]
-	vldr s3, [r3]
+	vldr d0, [r0]
+	vldr d1, [r1]
+	vldr d2, [r2]
+	vldr d3, [r3]
 	@S4 se usa para guardar la suma de las notas
-	vadd.F32 s4, s0, s1 @s4 = s0 + s1
-	vadd.F32 s4, s4, s2 @s4 = s4 + s2
-	vadd.F32 s4, s4, s3 @s4 = s4 + s3
+	vadd.F32 d4, d0, d1 @s4 = s0 + s1
+	vadd.F32 d4, d4, d2 @s4 = s4 + s2
+	vadd.F32 d4, d4, d3 @s4 = s4 + s3
 	@buscar lo restante para llegar a 61
-	vmov s5, #-61
-	vadd.F32 s4, s5 @s4 = s5 - 61
-	vmov r0, s5 @move value to r0
+	vmov d5, #-61
+	vadd d4, d5
+	vmov r0, d4
 	mov pc, lr @Return r0
 
 
