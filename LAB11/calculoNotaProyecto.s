@@ -30,7 +30,7 @@ calculoNotaProyecto:
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d4, d5, d9
 	ldr r0, =test
-	vmov r2, r3, d5
+	vmov r2, r3, d4
 	bl printf
 	
 	
