@@ -64,7 +64,7 @@ CalculoNotaProyecto:
 	vadd.F32 s4, s4, s2 @s4 = s4 + s2
 	vadd.F32 s4, s4, s3 @s4 = s4 + s3
 	@busca32lo restante para llegar a 61
-	vmov.F64 s5, r5 @d5 = 61
+	vmov.F32 s5, r5 @d5 = 61
 	vsub.F32 s4, s5, s4 @d4 = d5 - d4
 	@Guardar la direccion en r0
 	vstr d5, [r0]
