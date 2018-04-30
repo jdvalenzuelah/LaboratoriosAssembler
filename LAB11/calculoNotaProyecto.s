@@ -1,3 +1,8 @@
+/*
+Universidad del Valle de Guatemala
+Organizacion de computadoras y assembler
+autor: David Valenzuela				171001
+*/
 
 .data
 .align 2
@@ -30,7 +35,7 @@ calculoNotaProyecto:
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d4, d9, d5
 	ldr r0, =string
-	vmov r1, r2, d4
+	vmov r2, r3, d4
 	bl printf
 	@Guardamos el resultado en la direccion de r0
 	pop {lr}

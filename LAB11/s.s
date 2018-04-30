@@ -9,9 +9,9 @@ autor: David Valenzuela				171001
 .align 2
 @Notas
 nota1: .float 10
-nota2: .float 15
-nota3: .float 15
-nota4: .float 15
+nota2: .float 10
+nota3: .float 10
+nota4: .float 10
 @Nota base para aprovar
 base: .float 61
 @String para desplegar el resultado
