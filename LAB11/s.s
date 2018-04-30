@@ -24,6 +24,10 @@ main:
 	ldr r1, =addrNota2
 	ldr r2, =addrNota3
 	ldr r3, =addrNota4
+
+	ldr r0, =string
+	bl printf
+
 	bl CalculoNotaProyecto @Llamamos a la subrutina
 	@valor de retorno esta en r0, lo movemos a r1
 	ldr r1, [r0]
