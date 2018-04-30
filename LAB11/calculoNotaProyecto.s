@@ -30,7 +30,7 @@ calculoNotaProyecto:
 	vsub.F64 d5, d9, d5
 	ldr r0, =test
 	vmov r1, r2, d5
-	bl prinf
+	bl printf
 	@Guardamos el resultado en la direccion de r0
 	pop {lr}
 	mov pc, lr @Return r0
