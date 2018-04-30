@@ -34,14 +34,6 @@ main:
 
 	bl calculoNotaProyecto @Llamamos a la subrutina
 
-	@valor de retorno esta en r0, lo movemos a r1
-	vldr s0, [r0]
-	vcvt.F64.F32 d3, s0
-	vmov r2, r3, d3
-	@Imprimimos el resultado
-	ldr r0, =res
-	bl printf
-
 	@OS exit
 	mov r0,#0
 	mov r3,#0
