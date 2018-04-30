@@ -62,7 +62,7 @@ CalculoNotaProyecto:
 	mov r5, #61
 	vmov r6, s4
 	sub r6, r6, r5 @r6 = 61 - r6
-	vmov r0, r6 @ move the result to r0
+	mov r0, r6 @ move the result to r0
 	mov pc, lr @Return r0
 
 
