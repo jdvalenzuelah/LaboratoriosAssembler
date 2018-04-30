@@ -69,5 +69,5 @@ CalculoNotaProyecto:
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d5, d9, d5
 	@Guardamos el resultado en la direccion de r0
-
+	vstr d5, [r0]
 	mov pc, lr @Return r0
