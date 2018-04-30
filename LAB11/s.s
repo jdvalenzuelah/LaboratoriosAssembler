@@ -14,6 +14,7 @@ nota3: .float 15
 nota4: .float 15
 @Nota base para aprovar
 base: .float 61
+result: .word 0
 @String para desplegar el resultado
 string: .asciz "La nota a obtener en el proyecto es de: %f% \n" @
 
@@ -83,6 +84,7 @@ calculoNotaProyecto:
 	/* Encontramos cuanto falta para llegar a 61 */
 	vsub.F64 d4, d9, d5
 	/* Guardamos el resultado en el puntero de r0*/
+	ldr r0, =result
 	vstr d4, [r0]
 	@Guardamos el resultado en la direccion de r0
 	mov pc, lr @Return r0
