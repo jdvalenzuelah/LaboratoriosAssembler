@@ -33,3 +33,4 @@ calculoNotaProyecto:
 	@Guardamos el resultado en la direccion de r0
 	pop {lr}
 	mov pc, lr @Return r0
+	
