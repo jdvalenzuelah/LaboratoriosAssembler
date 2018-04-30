@@ -11,7 +11,7 @@ nota1: .float 10
 nota2: .float 15
 nota3: .float 15
 nota4: .float 15
-string: .asciz "La nota a obtener en el proyecto es de: %d % \n"
+string: .asciz "La nota a obtener en el proyecto es de: %f% \n"
 
 /* Funcion main del programa */
 .text
@@ -69,6 +69,5 @@ CalculoNotaProyecto:
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d5, d9, d5
 	@Guardamos el resultado en la direccion de r0
-	ldr r0, =nota1
-	vstr d5, [r0]
+
 	mov pc, lr @Return r0
