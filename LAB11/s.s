@@ -51,7 +51,7 @@ addrNota4: .word nota4
 */
 .global CalculoNotaProyecto
 CalculoNotaProyecto:
-	push {pc, lr}
+	push {lr}
 	@Cargar los valores punto flotante y convertirlos a B64
 	vldr s0, [r0]
 	vcvt.F64.F32 d5, s0
@@ -73,5 +73,5 @@ CalculoNotaProyecto:
 	ldr r0, =test
 	vmov r2, r3, d5
 	@Guardamos el resultado en la direccion de r0
-	pop {pc, lr}
+	pop {lr}
 	mov pc, lr @Return r0
