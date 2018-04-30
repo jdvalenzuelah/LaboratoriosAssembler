@@ -1,6 +1,7 @@
 
 .data
 .align 2
+base: .float 61
 test: .asciz "Prueba: %f\n"
 
 /**
@@ -19,15 +20,15 @@ calculoNotaProyecto:
 	vcvt.F64.F32 d7, s2
 	vldr s3, [r3]
 	vcvt.F64.F32 d8, s3
-	/*mov r5, #61
-	vmov s10, r5
-	vcvt.F64.F32 d9, s10*/
+	ldr r5, adbase
+	vldr s10, [r5]
+	vcvt.F64.F32 d9, s10
 	@Sumamos todos los valores
 	vadd.F64 d5, d5, d6
 	vadd.F64 d5, d5, d7
 	vadd.F64 d5, d5, d8
 	@Encontramos cuanto falta para llegar a 61
-	vsub.F64 d4, d5, #61
+	vsub.F64 d4, d5, d9
 	ldr r0, =test
 	vmov r2, r3, d9
 	bl printf
@@ -36,3 +37,5 @@ calculoNotaProyecto:
 	@Guardamos el resultado en la direccion de r0
 	pop {lr}
 	mov pc, lr @Return r0
+
+	adbase: .word base
