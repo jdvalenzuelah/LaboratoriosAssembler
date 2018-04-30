@@ -57,11 +57,11 @@ CalculoNotaProyecto:
 	vldr s3, [r3]
 	mov r5, #61
 	@S4 se usa para guardar la suma de las notas
-	vadd.F32 s4, s0, s1 @s4 = s0 + s1
-	vadd.F32 s4, s4, s2 @s4 = s4 + s2
-	vadd.F32 s4, s4, s3 @s4 = s4 + s3
+	vadd s4, s0, s1 @s4 = s0 + s1
+	vadd s4, s4, s2 @s4 = s4 + s2
+	vadd s4, s4, s3 @s4 = s4 + s3
 	@busca32lo restante para llegar a 61
-	vmov.F32 s5, r5 @d5 = 61
+	vmov s5, r5 @d5 = 61
 	vsub.F32 s4, s5, s4 @d4 = d5 - d4
 	@Guardar la direccion en r0
 	vstr s4, [r0]
