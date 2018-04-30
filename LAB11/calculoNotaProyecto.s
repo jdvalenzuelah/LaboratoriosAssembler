@@ -7,7 +7,7 @@ autor: David Valenzuela				171001
 .data
 .align 2
 base: .float 61
-string: .asciz "La nota a obtener en el proyecto es de: %f% \n"
+string: .asciz "La nota del proyecto necesaria para aprobar el curso es de: %f% \n"
 
 /**
  * r0 - r3 contiene la direccion del valor float
