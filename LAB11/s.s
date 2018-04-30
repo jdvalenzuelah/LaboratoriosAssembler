@@ -12,7 +12,6 @@ nota2: .float 15
 nota3: .float 15
 nota4: .float 15
 string: .asciz "La nota a obtener en el proyecto es de: %f% \n"
-test: .asciz "Prueba: %f"
 
 /* Funcion main del programa */
 .text
