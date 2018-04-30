@@ -16,7 +16,10 @@ test: .asciz "Prueba: %f"
 
 /* Funcion main del programa */
 .text
+.align 2
+
 .global main
+.type main,%function
 main:
 	stmfd sp!, {lr}	/* SP = R13 link register */
 
