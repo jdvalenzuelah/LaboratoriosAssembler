@@ -59,10 +59,9 @@ CalculoNotaProyecto:
 	vadd.F32 s4, s4, s2 @s4 = s4 + s2
 	vadd.F32 s4, s4, s3 @s4 = s4 + s3
 	@buscar lo restante para llegar a 61
-	mov r5, #61
-	vmov r6, s4
-	sub r6, r6, r5 @r6 = 61 - r6
-	mov r0, r6 @ move the result to r0
+	vmov s5, #-61
+	vadd.F32 s4, s5 @s4 = s5 - 61
+	vmov r0, s5 @move value to r0
 	mov pc, lr @Return r0
 
 
