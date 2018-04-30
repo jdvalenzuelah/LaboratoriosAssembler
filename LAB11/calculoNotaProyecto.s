@@ -2,7 +2,7 @@
 .data
 .align 2
 base: .float 61
-test: .asciz "Prueba: %f\n"
+string: .asciz "La nota a obtener en el proyecto es de: %f% \n"
 
 /**
  * r0 - r3 contiene la direccion del valor float
@@ -29,11 +29,9 @@ calculoNotaProyecto:
 	vadd.F64 d5, d5, d8
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d4, d9, d5
-	ldr r0, =test
+	ldr r0, =string
 	vmov r2, r3, d4
 	bl printf
-	
-	
 	@Guardamos el resultado en la direccion de r0
 	pop {lr}
 	mov pc, lr @Return r0
