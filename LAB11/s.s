@@ -25,9 +25,6 @@ main:
 	ldr r2, =addrNota3
 	ldr r3, =addrNota4
 
-	ldr r0, =string
-	bl printf
-
 	bl CalculoNotaProyecto @Llamamos a la subrutina
 	@valor de retorno esta en r0, lo movemos a r1
 	ldr r1, [r0]
@@ -67,5 +64,5 @@ CalculoNotaProyecto:
 	vmov.F32 s5, r5 @d5 = 61
 	vsub.F32 s4, s5, s4 @d4 = d5 - d4
 	@Guardar la direccion en r0
-	vstr d5, [r0]
+	vstr s4, [r0]
 	mov pc, lr @Return r0
