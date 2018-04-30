@@ -1,7 +1,7 @@
 
 .data
 .align 2
-test: .asciz "Prueba: %f"
+test: .asciz "Prueba: %f\n"
 
 /**
  * r0 - r3 contiene la direccion del valor float
@@ -29,8 +29,8 @@ calculoNotaProyecto:
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d5, d9, d5
 	ldr r0, =test
-	vmov r2, r3, d5
-	bl printf
+	vmov r1, r2, d5
+	bl prinf
 	@Guardamos el resultado en la direccion de r0
 	pop {lr}
 	mov pc, lr @Return r0
