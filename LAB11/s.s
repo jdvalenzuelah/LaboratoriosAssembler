@@ -12,6 +12,7 @@ nota2: .float 15
 nota3: .float 15
 nota4: .float 15
 string: .asciz "La nota a obtener en el proyecto es de: %f% \n"
+test: .asciz "Prueba: %f"
 
 /* Funcion main del programa */
 .text
@@ -50,6 +51,7 @@ addrNota4: .word nota4
 */
 .global CalculoNotaProyecto
 CalculoNotaProyecto:
+	push {pc, lr}
 	@Cargar los valores punto flotante y convertirlos a B64
 	vldr s0, [r0]
 	vcvt.F64.F32 d5, s0
@@ -68,7 +70,8 @@ CalculoNotaProyecto:
 	vadd.F64 d5, d5, d8
 	@Encontramos cuanto falta para llegar a 61
 	vsub.F64 d5, d9, d5
+	ldr r0, =test
+	vmov r2, r3, d5
 	@Guardamos el resultado en la direccion de r0
-	ldr r0, addrNota1
-	vstr d5, [r0]
+	pop {pc, lr}
 	mov pc, lr @Return r0
