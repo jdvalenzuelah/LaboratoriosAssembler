@@ -42,51 +42,67 @@ input:
 	pin21 .req r8
 	@Case 0
 	cmp valor, #0
+	@Set the binary value
 	moveq pin16, #1
 	moveq pin20, #1
 	moveq pin21, #1
+	@Encendemos el LED
 	beq encenderLEDS
 	@Case 1
 	cmp valor, #1
+	@Set the binary value
 	moveq pin16, #1
 	moveq pin20, #1
 	moveq pin21, #0
+	@Encendemos el LED
 	beq encenderLEDS
 	@case 2
 	cmp valor, #2
+	@Set the binary value
 	moveq pin16, #1
 	moveq pin20, #0
 	moveq pin21, #1
+	@Encendemos el LED
 	beq encenderLEDS
 	@case 3
 	cmp valor, #3
+	@Set the binary value
 	moveq pin16, #1
 	moveq pin20, #0
 	moveq pin21, #0
+	@Encendemos el LED
 	beq encenderLEDS
 	@case 4
 	cmp valor, #4
+	@Set the binary value
 	moveq pin16, #0
 	moveq pin20, #1
 	moveq pin21, #1
+	@Encendemos el LED
 	beq encenderLEDS
 	@case 5
 	cmp valor, #5
+	@Set the binary value
 	moveq pin16, #0
 	moveq pin20, #1
 	moveq pin21, #0
+	@Encendemos el LED
 	beq encenderLEDS
 	@case 6
 	cmp valor, #6
+	@Set the binary value
 	moveq pin16, #0
 	moveq pin20, #0
 	moveq pin21, #1
+	@Encendemos el LED
 	beq encenderLEDS
 	@case 7
 	cmp valor, #7
+	@Set the binary value
 	moveq pin16, #0
 	moveq pin20, #0
 	moveq pin21, #0
+	@Encendemos el LED
 	beq encenderLEDS
 
 encenderLEDS:
@@ -114,9 +130,6 @@ encenderLEDS:
 	mov r0, #21
 	mov r1, pin21
 	bl SetGpio
-
-
-
 
 /* exit code */
 exit:
