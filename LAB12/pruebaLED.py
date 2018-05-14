@@ -17,7 +17,7 @@ cont = 0
 
 while(cont < 4):
 	#Simulamos el presionar un boton
-	input("Presione enter:")
+	input("Presione una tecla")
 	cont += 1
 	if(cont == 1):
 		#GPIO.output(16, GPIO.HIGH)
