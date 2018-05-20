@@ -19,8 +19,8 @@ main:
 	ldr r0, =str1
 	bl printf
 
-	mov r0, #10
-	bl reloj
+	/*mov r0, #10
+	bl reloj*/
 
 	ldr r0, =str2
 	bl printf
