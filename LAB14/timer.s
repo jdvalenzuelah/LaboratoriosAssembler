@@ -1,4 +1,4 @@
-@ -----------------------------------
+    @ -----------------------------------
 @ Universidad del Valle de Guatemala
 @ Taller de Assembler 2016
 @ Christian Medina Armas
@@ -28,13 +28,13 @@ delayReg:.word 1000000
 @ Input: r0 delay counter val
 @ ---------------------------
 delay:
-    mov r7,#0
+    mov r7, #0
 
     b compare
 loop:
-    add r7,#1     //r7++
+    add r7, #1     @r7++
 compare:
-    cmp r7,r0     //test r7 == r0
+    cmp r7,r0     @test r7 == r0
     bne loop
 
    mov pc,lr
