@@ -4,8 +4,8 @@ Programa principal del cronometro
 
 .data
 .align 2
-str1: .asciz "Delay"
-str2: .asciz "after delay"
+str1: .asciz "Delay \n"
+str2: .asciz "after delay \n"
 .global myloc
 myloc: .word 0
 
@@ -19,8 +19,8 @@ main:
 	ldr r0, =str1
 	bl printf
 
-	/*mov r0, #10
-	bl reloj*/
+	mov r0, #1
+	bl reloj
 
 	ldr r0, =str2
 	bl printf
