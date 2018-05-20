@@ -6,6 +6,8 @@ Programa principal del cronometro
 .align 2
 str1: .asciz "Delay"
 str2: .asciz "after delay"
+.global myloc
+myloc: .word 0
 
 .text
 .align 2
