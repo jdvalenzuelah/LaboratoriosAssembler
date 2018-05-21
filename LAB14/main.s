@@ -167,8 +167,9 @@ hardware:
 		ldr r6, =display2
 		ldr r5, [r5]
 		ldr r6, [r6]
+		mov r7, #10 @r7 = 10
 		/* Display2 decenas, multiplizamos por 10 */
-		mul r6, #10
+		mul r6, r7
 		mov alarma, #0 @Alarma = 0
 		add alarma, r5, r6 @Alarma = (display2 * 10) + display1
 		mov cont, #0 @cont = 0
