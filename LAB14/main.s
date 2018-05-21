@@ -67,7 +67,7 @@ software:
 
 exit:
 	@OS exit
-	mov r0,#0
-	mov r3,#0
+	mov r0, #0
+	mov r3, #0
 	ldmfd sp!,{lr}
 	bx lr
