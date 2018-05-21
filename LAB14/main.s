@@ -266,7 +266,7 @@ cronometro:
 	ldr r0, =tstStar
 	bl printf
 	pop {r0, r1}
-	@bl numeros
+	bl numeros
 	@Esperamos por un segundo
 	mov r0, #1
 	bl segundos
