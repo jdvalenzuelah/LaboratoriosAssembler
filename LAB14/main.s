@@ -68,6 +68,7 @@ software:
 	blt errorRj
 	cmp r0, #60
 	bgt errorRj
+	b salir
 
 /* Opcion invalida ingresada */
 errorOpt:
