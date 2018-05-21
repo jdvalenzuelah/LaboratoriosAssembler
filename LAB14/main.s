@@ -9,7 +9,8 @@ ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
 errorMessageOpt: .asciz "Error! ingrese una opcion valida.\n"
 errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60."
 inputFormat: .asciz "%d"
-input: .word 0
+opt: .word 0
+secs: .word 0
 .global myloc
 myloc: .word 0
 
@@ -27,11 +28,11 @@ start:
 
 	/* Get the selected option */
 	ldr r0, =inputFormat
-	ldr r1, =input
+	ldr r1, =opt
 	bl scanf
 
 	/* Verify input is valid */
-	ldr r0, =input
+	ldr r0, =opt
 	ldr r0, [r0]
 	/* Opcion por hardware */
 	cmp r0, #1
@@ -58,10 +59,10 @@ software:
 	bl printf
 	/* Get the input value */
 	ldr r0, =inputFormat
-	ldr r1, =input
+	ldr r1, =secs
 	bl scanf
 	/* Verify valid input (0-60)*/
-	ldr r0, =input
+	ldr r0, =secs
 	ldr r0, [r0]
 	cmp r0, #0
 	blt errorRj
