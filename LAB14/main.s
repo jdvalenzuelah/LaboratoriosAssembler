@@ -4,8 +4,11 @@ Programa principal del cronometro
 
 .data
 .align 2
-str1: .asciz "Delay \n"
-str2: .asciz "after delay \n"
+menu: .asciz "Ingrese una opcion:\n1. Configurar alarma por hardware.\n2. Configurar alarma por sowtfare\n3. Salir\n"
+ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
+errorMessageOpt: .asciz "Error! ingrese una opcion valida."
+inputFormat: .asciz "%d"
+input: .word 0
 .global myloc
 myloc: .word 0
 
@@ -16,15 +19,53 @@ myloc: .word 0
 main:
 	stmfd sp!,{lr}
 
-	ldr r0, =str1
+start:
+	/* Show the menu */
+	ldr r0, =menu
 	bl printf
 
-	mov r0, #1
-	bl reloj
+	/* Get the selected option */
+	ldr r0, =inputFormat
+	ldr r1, =input
+	bl scanf
 
-	ldr r0, =str2
+	/* Verify input is valid */
+	ldr r0, =input
+	ldr r0, =[r0]
+	/* Opcion por hardware */
+	cmp r0, #1
+	beq hardware
+	/* Opcion por software */
+	cmp r0, #2
+	beq software
+	/* Salir */
+	cmp r0, #3
+	beq exit
+	/* Opcion invalida */
+	bne errorOpt
+
+/* Opcion invalida ingresada */
+errorOpt:
+	ldr r0, =errorMessageOpt
+	bl printf
+	b start
+
+/* Configuracion por hardware */
+hardware:
+	mov r0, #0
+
+/* Configuracion por software */
+software:
+	ldr r0, =ingresoSecs
 	bl printf
 
+	ldr r0, =inputFormat
+	ldr r1, =input
+	bl scanf
+
+
+
+exit:
 	@OS exit
 	mov r0,#0
 	mov r3,#0
