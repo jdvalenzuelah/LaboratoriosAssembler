@@ -62,9 +62,10 @@ software:
 	ldr r0, =inputFormat
 	ldr r1, =input
 	bl scanf
+
 salir:
 	@OS exit
-	mov r0, #0
+	@mov r0, #0
 	mov r3, #0
 	ldmfd sp!,{lr}
 	bx lr
