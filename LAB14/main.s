@@ -52,7 +52,7 @@ errorOpt:
 
 /* Configuracion por hardware */
 hardware:
-	mov r0, #0
+	
 
 /* Configuracion por software */
 software:
