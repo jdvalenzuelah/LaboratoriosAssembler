@@ -87,8 +87,8 @@ cronometro:
 	/*
 	bl numeros
 	*/
-	mov r2, r1
-	mov r1, r0
+	mov r2, r0
+	mov r1, r1
 	ldr r0, =testStr
 	bl printf
 	@Esperamos por un segundo
