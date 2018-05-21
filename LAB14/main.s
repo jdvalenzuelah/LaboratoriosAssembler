@@ -11,6 +11,7 @@ ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
 errorMessageOpt: .asciz "Error! ingrese una opcion valida.\n"
 errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60.\n"
 inputFormat: .asciz "%d"
+tstStar: .asciz "%d - %d\n"
 opt: .word 0
 secs: .word 0
 display1: .word 0
@@ -259,7 +260,10 @@ cronometro:
 	mov r0, cont
 	bl getDigits
 	@Mostramos los digitos en los displays
-	bl numeros
+	//bl numeros
+	mov r0, r2
+	ldr r0, =tstStar
+	bl printf
 	@Esperamos por un segundo
 	mov r0, #1
 	bl segundos
