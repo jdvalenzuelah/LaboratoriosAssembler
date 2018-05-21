@@ -34,10 +34,10 @@ start:
 	ldr r0, =[r0]
 	/* Opcion por hardware */
 	cmp r0, #1
-	beq hardware
+	beq errorOpt
 	/* Opcion por software */
 	cmp r0, #2
-	beq software
+	beq errorOpt
 	/* Salir */
 	cmp r0, #3
 	@beq salir
