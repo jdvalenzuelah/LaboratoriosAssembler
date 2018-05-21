@@ -76,7 +76,7 @@ software:
 cronometro:
 	push {r9, r10}
 	ldr r0, =testStr
-	mov r1, r10
+	mov r1, r9
 	bl printf
 	mov r0, #1
 	bl segundos
