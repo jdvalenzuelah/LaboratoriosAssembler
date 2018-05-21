@@ -61,4 +61,4 @@ software:
 
 	ldr r0, =inputFormat
 	ldr r1, =input
-	bl scanf
+	bl scanf 
