@@ -1,5 +1,7 @@
 /*
 Programa principal del cronometro
+David Valenzuela 171001
+Fernando Hengstenber 17699
 */
 
 .data
