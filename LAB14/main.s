@@ -6,7 +6,8 @@ Programa principal del cronometro
 .align 2
 menu: .asciz "Ingrese una opcion:\n1. Configurar alarma por hardware.\n2. Configurar alarma por sowtfare\n3. Salir\n"
 ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
-errorMessageOpt: .asciz "Error! ingrese una opcion valida."
+errorMessageOpt: .asciz "Error! ingrese una opcion valida.\n"
+errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60."
 inputFormat: .asciz "%d"
 input: .word 0
 .global myloc
@@ -44,11 +45,7 @@ start:
 	/* Opcion invalida */
 	bne errorOpt
 
-/* Opcion invalida ingresada */
-errorOpt:
-	ldr r0, =errorMessageOpt
-	bl printf
-	b start
+
 
 /* Configuracion por hardware */
 hardware:
@@ -56,12 +53,32 @@ hardware:
 
 /* Configuracion por software */
 software:
+	/* Show message */
 	ldr r0, =ingresoSecs
 	bl printf
-
+	/* Get the input value */
 	ldr r0, =inputFormat
 	ldr r1, =input
 	bl scanf
+	/* Verify valid input (0-60)*/
+	ldr r0, =input
+	ldr r0, [r0]
+	cmp r0, #0
+	blt errorRj
+	cmp r0, #60
+	bgt errorRj
+
+/* Opcion invalida ingresada */
+errorOpt:
+	ldr r0, =errorMessageOpt
+	bl printf
+	b start
+
+/* Valor invalido ingresado */
+errorRj:
+	ldr r0, =errorMessageRj
+	bl printf
+	b software
 
 salir:
 	@OS exit

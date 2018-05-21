@@ -234,8 +234,8 @@ Subrutina es un delay para n cantidad de segundos
 	Args:
 		r0: n cantidad de segundos a esperar
 */
-.global reloj
-reloj:
+.global segundos
+segundos:
 	@Cargamos numero grande (un segundo)
 	ldr r8, =delayReg
 	ldr r8, [r8]
@@ -258,6 +258,55 @@ reloj:
 		b terminarEspera
 	terminarEspera:
 		mov pc,lr
+
+/*
+Subrutina para la division de dos numeros enteros de la forma A/B
+
+	Args:
+		r0: numero A
+		r1: numero B
+
+	Returns:
+		r0: Resultado de A/B
+		r1: Residuo de A/B
+*/
+.global dividir
+dividir:
+    push {lr}
+    @ reiniciamos los valores de los registros donde iran los resultados
+    mov r2, #0
+    mov r3, r0 @asignamos el residuo como A
+    inicio_div:
+        cmp r3,r1
+        blt fin_div     @terminar ya que B es mas grande que el residuo
+        sub r3,r3,r1    @residuo = residuo-B 
+        add r2,r2,#1    @resultado = resultado+1
+        b inicio_div
+    fin_div:
+	    mov r0, r2
+	    mov r1, r3
+	    pop {pc}
+
+/*
+Subrutina maneja cronometro entre 0 y 60 segundos. Muestra el reloj en 2 displays de 7 segmentos.
+Pines display 1 utilizando BCD:
+	GPIO 02 --> 1000 A
+	GPIO 03 --> 0100 B
+	GPIO 04 --> 0010 C
+	GPIO 17 --> 0001 D
+Pines display 2 utilizando BCD:
+	GPIO 22 --> 1000 A
+	GPIO 10 --> 0100 B
+	GPIO 09 --> 0010 C
+	GPIO 11 --> 0001 D
+
+Args:
+	r0: Numero de segundos entre 0 y 60
+*/
+.global cronometro
+cronometro:
+	
+
 
 /******************************************************************************
 *	gpio.s
