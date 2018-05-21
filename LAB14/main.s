@@ -161,6 +161,7 @@ hardware:
 		bl GetGpio2
 		cmp r0, #1
 		beq comienzoH
+		b botones
 
 	comienzoH:
 		/* alarma, contador, display1 (r5) y display2 (r6) */
