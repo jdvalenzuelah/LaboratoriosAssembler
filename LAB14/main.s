@@ -42,7 +42,7 @@ Configuracion de pines:
 	Pin Boton reset:
 		GPIO 13
 */
-	bl GetGpioAddress
+	@bl GetGpioAddress
 	/* ---- Configurar pines entrada/salida ---- */
 	/* Salidas */
 	@Display 1
