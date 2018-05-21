@@ -7,7 +7,7 @@ Programa principal del cronometro
 menu: .asciz "Ingrese una opcion:\n1. Configurar alarma por hardware.\n2. Configurar alarma por sowtfare\n3. Salir\n"
 ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
 errorMessageOpt: .asciz "Error! ingrese una opcion valida.\n"
-errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60."
+errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60.\n"
 inputFormat: .asciz "%d"
 opt: .word 0
 secs: .word 0
