@@ -80,7 +80,7 @@ cronometro:
 	bl printf
 	mov r0, #1
 	bl segundos
-	pop{r9, r10}
+	pop {r9, r10}
 	add r9, #1
 	cmp r9, r10
 	bne cronometro
