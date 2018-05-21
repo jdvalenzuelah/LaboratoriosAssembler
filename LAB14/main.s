@@ -11,6 +11,9 @@ errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60.\n"
 inputFormat: .asciz "%d"
 opt: .word 0
 secs: .word 0
+display1: .word 0
+display2: .word 0
+displayActual: .word 1
 .global myloc
 myloc: .word 0
 
@@ -42,6 +45,8 @@ Configuracion de pines:
 		GPIO 6
 	Pin Boton reset:
 		GPIO 13
+	Pin boton iniciar alarma:
+		GPIO 16
 */
 	bl GetGpioAddress
 	/* ---- Configurar pines entrada/salida ---- */
@@ -84,6 +89,10 @@ Configuracion de pines:
 	mov r0,#12		@Puerto 12 , como salida 
 	mov r1,#1
 	bl SetGpioFunction
+	@Iniciamos buzzer/Ledapagado
+	mov r0, #12
+	mov r1, #0
+	bl SetGpio
 	/* Entradas */
 	@Button subir 
 	mov r0,#5  	@Puerto 5 como entrada 
@@ -128,7 +137,93 @@ start:
 
 /* Configuracion por hardware */
 hardware:
-	mov r0, #0
+	botones:
+		/* Boton aumentar digito */
+		mov r0, #5
+		bl GetGpio2
+		cmp r0, #1
+		beq aumentarDigito
+		/* Boton cambiar unidades/decenas */
+		mov r0, #6
+		bl GetGpio2
+		cmp r0, #1
+		beq cambiarDisplay
+		/* Boton reset */
+		mov r0, #13
+		bl GetGpio2
+		cmp r0, #1
+		beq reset
+		/* boton iniciar alarma */
+		mov r0, #16
+		bl GetGpio2
+		cmp r0, #1
+		beq comienzoH
+
+	comienzoH:
+		/* alarma, contador, display1 (r5) y display2 (r6) */
+		alarma .req r10
+		cont .req r9
+		ldr r5, =display1
+		ldr r6, =display2
+		ldr r5, [r5]
+		ldr r6, [r6]
+		/* Display2 decenas, multiplizamos por 10 */
+		mul r6, #10
+		mov alarma, #0 @Alarma = 0
+		add alarma, r5, r6 @Alarma = (display2 * 10) + display1
+		mov cont, #0 @cont = 0
+		b cronometro @Comenzamos alarma
+
+	reset:
+		/*  Poner todo en 0 */
+		mov r0, #0
+		mov r1, #0
+		ldr r2, =display1
+		ldr r3, =display2
+		str r0, [r2]
+		str r1, [r3]
+		bl numeros
+		b botones
+
+	cambiarDisplay:
+		/* Obtenemos el display actual */
+		ldr r5, =displayActual
+		ldr r5, [r5]
+		/* Si esta en display 1 cambiamos al 2 y viceversa */
+		cmp r5, #1
+		moveq r5, #2
+		cmp r5, #2
+		moveq r5, #1
+		/* Guardamos el nuevo display actual */
+		ldr r6, =displayActual
+		str r5, [r6]
+		b botones
+
+	aumentarDigito:
+		/* Cargamos los valores actuales del display, y el display que se configura */
+		ldr r4, =displayActual
+		ldr r4, [r4]
+		ldr r3, =display1
+		ldr r3, [r3]
+		ldr r2, =display2
+		ldr r2, [r2]
+		/* Configuracion display 1 */
+		cmp r4, #1
+		addeq r3, #1 @r3++
+		/* Configuracion display 2 */
+		cmp r4, #2
+		addeq r2, #1 @r2++
+		/* Guardamos los valores de los displays */
+		ldr r5, =display1
+		str r3, [r5]
+		ldr r6, =display2
+		str r2, [r6]
+		/* Mostramos los valores */
+		mov r0, r3
+		mov r1, r2
+		bl numeros
+		b botones
+
 
 /* Configuracion por software */
 software:
@@ -166,12 +261,37 @@ cronometro:
 	mov r0, #1
 	bl segundos
 	pop {cont, alarma}
-	add r9, #1
-	cmp r9, r10
+	add cont, #1
+	cmp cont, alarma
 	ble cronometro
 	.unreq cont
 	.unreq alarma
+	b alerta
+
+alerta:
+	/* Encendemos el indicador de la alarma */
+	/* Alerta: 
+	Enciende 2 segundos, apaga un segundo, se enciende 2 segundos se apaga de nuevo */
+	mov r0, #12 @GPIO 12
+	mov r1, #1 @High
+	bl SetGpio
+	mov r0, #2
+	bl segundos
+	mov r0, #12 @GPIO 12
+	mov r1, #0 @Low
+	bl SetGpio
+	mov r0, #1
+	bl segundos
+	mov r0, #12 @GPIO 12
+	mov r1, #1 @High
+	bl SetGpio
+	mov r0, #2
+	bl segundos
+	mov r0, #12 @GPIO 12
+	mov r1, #1 @low
+	bl SetGpio
 	b start
+
 
 /* Opcion invalida ingresada */
 errorOpt:
