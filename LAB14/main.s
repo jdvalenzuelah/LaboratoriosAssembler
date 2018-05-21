@@ -69,8 +69,8 @@ software:
 	cmp r0, #60
 	bgt errorRj
 	/* Cargamos la alarma e inicializamos un contador  */
-	.req alarma r10
-	.req cont r9
+	alarma .req r10
+	cont .req r9
 	mov alarma, r0
 	mov cont, #0
 	/* Iniciamos la alarma */
