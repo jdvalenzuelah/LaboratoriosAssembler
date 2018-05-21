@@ -49,16 +49,3 @@ errorOpt:
 	ldr r0, =errorMessageOpt
 	bl printf
 	b start
-
-/* Configuracion por hardware */
-hardware:
-	
-
-/* Configuracion por software */
-software:
-	ldr r0, =ingresoSecs
-	bl printf
-
-	ldr r0, =inputFormat
-	ldr r1, =input
-	bl scanf 
