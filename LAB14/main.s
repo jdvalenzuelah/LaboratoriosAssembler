@@ -9,6 +9,7 @@ ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
 errorMessageOpt: .asciz "Error! ingrese una opcion valida.\n"
 errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60.\n"
 inputFormat: .asciz "%d"
+testStr: .asciz "Secs: %d\n"
 opt: .word 0
 secs: .word 0
 .global myloc
@@ -68,7 +69,22 @@ software:
 	blt errorRj
 	cmp r0, #60
 	bgt errorRj
-	b salir
+	mov r10, r0
+	mov r9, #0
+	b cronometro
+
+cronometro:
+	push {r9, r10}
+	ldr r0, =testStr
+	mov r1, r10
+	bl printf
+	mov r0, #1
+	bl segundos
+	pop{r9, r10}
+	add r9, #1
+	cmp r9, r10
+	bne cronometro
+	b start
 
 /* Opcion invalida ingresada */
 errorOpt:
