@@ -20,6 +20,7 @@ myloc: .word 0
 .type main,%function
 main:
 	stmfd sp!,{lr}
+	b start
 confPin:
 /*
 Configuracion de pines:
@@ -42,7 +43,7 @@ Configuracion de pines:
 	Pin Boton reset:
 		GPIO 13
 */
-	@bl GetGpioAddress
+	bl GetGpioAddress
 	/* ---- Configurar pines entrada/salida ---- */
 	/* Salidas */
 	@Display 1
