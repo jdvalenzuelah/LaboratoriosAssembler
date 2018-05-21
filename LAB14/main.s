@@ -31,16 +31,16 @@ start:
 
 	/* Verify input is valid */
 	ldr r0, =input
-	ldr r0, =[r0]
+	ldr r0, [r0]
 	/* Opcion por hardware */
 	cmp r0, #1
-	beq errorOpt
+	beq hardware
 	/* Opcion por software */
 	cmp r0, #2
-	beq errorOpt
+	beq software
 	/* Salir */
 	cmp r0, #3
-	@beq salir
+	beq salir
 	/* Opcion invalida */
 	bne errorOpt
 
@@ -49,3 +49,23 @@ errorOpt:
 	ldr r0, =errorMessageOpt
 	bl printf
 	b start
+
+/* Configuracion por hardware */
+hardware:
+	mov r0, #0
+
+/* Configuracion por software */
+software:
+	ldr r0, =ingresoSecs
+	bl printf
+
+	ldr r0, =inputFormat
+	ldr r1, =input
+	bl scanf
+
+salir:
+	@OS exit
+	mov r0, #0
+	mov r3, #0
+	ldmfd sp!,{lr}
+	bx lr
