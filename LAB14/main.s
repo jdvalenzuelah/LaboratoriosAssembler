@@ -70,7 +70,7 @@ software:
 	cmp r0, #60
 	bgt errorRj
 	mov r10, r0
-	mov r9, #1
+	mov r9, #0
 	b cronometro
 
 cronometro:
@@ -83,7 +83,7 @@ cronometro:
 	pop {r9, r10}
 	add r9, #1
 	cmp r9, r10
-	blt cronometro
+	ble cronometro
 	b start
 
 /* Opcion invalida ingresada */
