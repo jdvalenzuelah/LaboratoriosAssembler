@@ -83,7 +83,7 @@ cronometro:
 	mov r0, cont
 	bl getDigits
 	@Mostramos los digitos en los displays
-	bl numeros
+	@bl numeros
 	@Esperamos por un segundo
 	mov r0, #1
 	bl segundos
