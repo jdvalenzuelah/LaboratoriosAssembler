@@ -288,24 +288,49 @@ dividir:
 	    pop {pc}
 
 /*
-Subrutina maneja cronometro entre 0 y 60 segundos. Muestra el reloj en 2 displays de 7 segmentos.
-Pines display 1 utilizando BCD:
-	GPIO 02 --> 1000 A
-	GPIO 03 --> 0100 B
-	GPIO 04 --> 0010 C
-	GPIO 17 --> 0001 D
-Pines display 2 utilizando BCD:
-	GPIO 22 --> 1000 A
-	GPIO 10 --> 0100 B
-	GPIO 09 --> 0010 C
-	GPIO 11 --> 0001 D
+Subrutinas para obtener el digito de decenas y unidades de un numero entre 0 y 99
 
 Args:
-	r0: Numero de segundos entre 0 y 60
+	r0: numero entre 0 y 99
+
+Returns:
+	r0: Digito de las unidades entre 0 y 9
+	r1: Digito de las decenas entre 0 y 9
+	** En caso de numero invalido se retorna 0 en ambos registros **
 */
-.global cronometro
-cronometro:
-	
+.global getDigits
+getDigits:
+	/* Obtenemos los casos posibles */
+	cmp r0, #0
+	ble ceros
+	cmp r0, #9
+	ble underTen
+	cmp r0, #99
+	ble digits
+	/* 9 < n < 99 */
+	digits:
+		push {lr}
+		mov r1, #10
+		bl dividir
+		/* r1 tiene numero de la unidad, r0 el de la decena. Los cambiamos */
+		mov r9, r0 @r9 = r0
+		mov r0, r1 @r0, = r1
+		mov r1, r9 @r1 = r9
+		pop {lr}
+		b exit
+	/* Numero menor a 10 */
+	underTen:
+		@r0 ya tiene las unidades, decenas = 0
+		mov r1, #0
+		b exit
+	/* Error unidadees y decenas = 0 */
+	ceros:
+		mov r0, #0
+		mov r1, #0
+		b exit
+	exit:
+		mov pc, lr
+
 
 
 /******************************************************************************

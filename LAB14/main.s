@@ -9,7 +9,6 @@ ingresoSecs: .asciz "Ingrese segundos en la alarma (0-60):\n"
 errorMessageOpt: .asciz "Error! ingrese una opcion valida.\n"
 errorMessageRj: .asciz "Valor invalido! Ingrese un valir entre 0 y 60.\n"
 inputFormat: .asciz "%d"
-testStr: .asciz "Secs: %d\n"
 opt: .word 0
 secs: .word 0
 .global myloc
@@ -23,16 +22,16 @@ main:
 	stmfd sp!,{lr}
 
 start:
-	/* Show the menu */
+	/* Mostramos el menu */
 	ldr r0, =menu
 	bl printf
 
-	/* Get the selected option */
+	/* Obtenemos la opcion ingresada */
 	ldr r0, =inputFormat
 	ldr r1, =opt
 	bl scanf
 
-	/* Verify input is valid */
+	/* Verificamos que el input sea valido */
 	ldr r0, =opt
 	ldr r0, [r0]
 	/* Opcion por hardware */
@@ -55,35 +54,45 @@ hardware:
 
 /* Configuracion por software */
 software:
-	/* Show message */
+	/* Mpstramos mensaje */
 	ldr r0, =ingresoSecs
 	bl printf
-	/* Get the input value */
+	/* Obtenemos el valor ingresado */
 	ldr r0, =inputFormat
 	ldr r1, =secs
 	bl scanf
-	/* Verify valid input (0-60)*/
+	/* Validamos ingreso valido (0-60)*/
 	ldr r0, =secs
 	ldr r0, [r0]
 	cmp r0, #0
 	blt errorRj
 	cmp r0, #60
 	bgt errorRj
-	mov r10, r0
-	mov r9, #0
+	/* Cargamos la alarma e inicializamos un contador  */
+	.req alarma r10
+	.req cont r9
+	mov alarma, r0
+	mov cont, #0
+	/* Iniciamos la alarma */
 	b cronometro
 
 cronometro:
-	push {r9, r10}
-	ldr r0, =testStr
-	mov r1, r9
-	bl printf
+	@Guardar el valor de la alarma y el contador
+	push {cont, alarma}
+	@Obtenemos los digitos
+	mov r0, cont
+	bl getDigits
+	@Mostramos los digitos en los displays
+	bl numeros
+	@Esperamos por un segundo
 	mov r0, #1
 	bl segundos
-	pop {r9, r10}
+	pop {cont, alarma}
 	add r9, #1
 	cmp r9, r10
 	ble cronometro
+	.unreq cont
+	.unreq alarma
 	b start
 
 /* Opcion invalida ingresada */
