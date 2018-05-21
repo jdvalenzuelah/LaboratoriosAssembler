@@ -260,7 +260,7 @@ cronometro:
 	mov r0, cont
 	bl getDigits
 	@Mostramos los digitos en los displays
-	//bl numeros
+	@bl numeros
 	mov r0, r2
 	ldr r0, =tstStar
 	bl printf
