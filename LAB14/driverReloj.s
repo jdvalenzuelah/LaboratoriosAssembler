@@ -1,5 +1,7 @@
 /*
 Programa contiene las subrutinas necesarias para el funcionamiento de la alarma
+David Valenzuela 171001
+Fernando Hengstenber 17699
 */
 
 .text
@@ -191,7 +193,7 @@ numeros:
 		@Comparamos si es 5
 		cmp r1,#5
 		beq cinco
-		@Comparamos si es 6
+		@Comparamos si es 6 
 		cmp r1,#6
 		beq seis
 		@Comparamos si es 7
