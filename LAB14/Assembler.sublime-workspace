@@ -1,0 +1,1167 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"displ",
+				"display1"
+			],
+			[
+				"get",
+				"GetGpio2"
+			],
+			[
+				"displa",
+				"displayActual"
+			],
+			[
+				"cam",
+				"cambiarDisplay"
+			],
+			[
+				"bon",
+				"botones"
+			],
+			[
+				"disp",
+				"dispplayActual"
+			],
+			[
+				"aument",
+				"aumentarDigito"
+			],
+			[
+				"r1",
+				"r1"
+			],
+			[
+				"erro",
+				"errorRj"
+			],
+			[
+				"error",
+				"errorRj"
+			],
+			[
+				"inp",
+				"input"
+			],
+			[
+				"ingres",
+				"ingresoSecs"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"imo",
+				"imprimirDoctor"
+			],
+			[
+				"return",
+				"returns"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"espe",
+				"especialidad"
+			],
+			[
+				"qp",
+				"qP2"
+			],
+			[
+				"bus",
+				"buscarPersona"
+			],
+			[
+				"buscar",
+				"buscarPersona"
+			],
+			[
+				"que",
+				"queryP"
+			],
+			[
+				"nom",
+				"nombreD"
+			],
+			[
+				"dosi",
+				"dosisP"
+			],
+			[
+				"ded",
+				"desdeFecha"
+			],
+			[
+				"re",
+				"relationships"
+			],
+			[
+				"query",
+				"queryD"
+			],
+			[
+				"dos",
+				"dosisP"
+			],
+			[
+				"pa",
+				"paciente"
+			],
+			[
+				"impri",
+				"imprimirDoctor"
+			],
+			[
+				"lis",
+				"listaDoc"
+			],
+			[
+				"buscra",
+				"buscarDoctor"
+			],
+			[
+				"rsu",
+				"result"
+			],
+			[
+				"esp",
+				"especialidad"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"pers",
+				"persona2"
+			],
+			[
+				"visi",
+				"visita"
+			],
+			[
+				"agreg",
+				"agregarPaciente"
+			],
+			[
+				"hast",
+				"hastaFecha"
+			],
+			[
+				"desde",
+				"desdeFecha"
+			],
+			[
+				"doct",
+				"doctores"
+			],
+			[
+				"es",
+				"especialidad"
+			],
+			[
+				"end",
+				"encenderLEDS"
+			],
+			[
+				"se",
+				"SetGpio"
+			],
+			[
+				"set",
+				"SetGpioFunction"
+			],
+			[
+				"Num",
+				"numero"
+			],
+			[
+				"ad",
+				"addrNota1"
+			],
+			[
+				"add",
+				"addrNota4"
+			],
+			[
+				"ju",
+				"jugador2"
+			],
+			[
+				"jugadr",
+				"jugador1"
+			],
+			[
+				"juga",
+				"jugador1"
+			],
+			[
+				"girar",
+				"girarDadosStr"
+			],
+			[
+				"winne",
+				"winner1"
+			],
+			[
+				"valu",
+				"value4"
+			],
+			[
+				"vale",
+				"value4"
+			],
+			[
+				"firs",
+				"firstColumn"
+			],
+			[
+				"veri",
+				"verifyvertical"
+			],
+			[
+				"tie",
+				"tieChecker"
+			],
+			[
+				"pla",
+				"player1Input"
+			],
+			[
+				"value",
+				"value4"
+			],
+			[
+				"val",
+				"value1"
+			],
+			[
+				"verify",
+				"verifyHorizontal"
+			],
+			[
+				"ver",
+				"verifyFinish"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"me",
+				"mensajeGanador"
+			],
+			[
+				"player",
+				"player1Input"
+			],
+			[
+				"va",
+				"value4"
+			],
+			[
+				"vu",
+				"value1"
+			],
+			[
+				"colum",
+				"column1"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"ld",
+				"ldr"
+			],
+			[
+				"column",
+				"column1"
+			],
+			[
+				"as",
+				"asciz"
+			],
+			[
+				"reg",
+				"register"
+			],
+			[
+				"vector",
+				"vectorFull"
+			],
+			[
+				"vect",
+				"vectorFull"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"insertInp",
+				"insertInputFinish"
+			],
+			[
+				"inse",
+				"insertInputFinish"
+			],
+			[
+				"colu",
+				"column1"
+			],
+			[
+				"inser",
+				"insertInputVectorFull"
+			],
+			[
+				"insert",
+				"insertInputFinish"
+			],
+			[
+				"input",
+				"inputError"
+			],
+			[
+				"letras",
+				"letrasMayusculas"
+			],
+			[
+				"st",
+				"static"
+			],
+			[
+				"mensaje",
+				"mensajeOpcionInvalida"
+			],
+			[
+				"men",
+				"mensajeResultado"
+			],
+			[
+				"ldr",
+				"ldreq"
+			],
+			[
+				"oo",
+				"opcionSeleccionada"
+			],
+			[
+				"opcion",
+				"opcionSeleccionada"
+			],
+			[
+				"opci",
+				"opcionSeleccionada"
+			],
+			[
+				"op",
+				"opcionSeleccionada"
+			],
+			[
+				"pe",
+				"persona2"
+			],
+			[
+				"flo",
+				"floatStr"
+			],
+			[
+				"turn",
+				"turn_rigth"
+			],
+			[
+				"turn_",
+				"turn_rigth"
+			],
+			[
+				"file",
+				"filePath"
+			],
+			[
+				"Fi",
+				"File"
+			],
+			[
+				"File",
+				"FileReader"
+			],
+			[
+				"rb",
+				"rdbtnFm"
+			],
+			[
+				"mos",
+				"mostrarEstacion"
+			],
+			[
+				"de",
+				"degreesOfFreedom"
+			],
+			[
+				"den",
+				"denominador"
+			],
+			[
+				"deni",
+				"denominadorP2"
+			],
+			[
+				"deno",
+				"denominadorP1"
+			],
+			[
+				"s2",
+				"s2SoverN"
+			],
+			[
+				"s",
+				"s2SoverN"
+			],
+			[
+				"num",
+				"numerador"
+			],
+			[
+				"dist",
+				"dist2"
+			],
+			[
+				"di",
+				"dist1"
+			],
+			[
+				"mea",
+				"mean2"
+			],
+			[
+				"tr",
+				"try"
+			],
+			[
+				"fech",
+				"fecha2"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/daval/Desktop/Offline/assembler/gpio0_2.s",
+			"settings":
+			{
+				"buffer_size": 3282,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/daval/Desktop/Offline/assembler/principal.s",
+			"settings":
+			{
+				"buffer_size": 25490,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/*--------------------------------\nUniversidad del Valle de Guatemala\nManuel Valenzuela 15072\nJuan Carlos Solis 15564\nsubrutinas.s\nLaboratorio 2 \n--------------------------------*/\n\n/*\nSubrutina Numeros\nDescripcion: Coloca los numeros en los displays\nEntradas:\n@r0 ---> numero display 1 (unidades)\n@@r1---> numero display 2 (decenas\n\nRegistros:\nr10 --> bit 3 1000\nr9  --> bit 2 0100\nr8  --> bit 1 0010\nr7\t--> bit 0 0001\n*/\n.global Numeros\n\nNumeros:\n\tmov r10,#0\n\tmov r9,#0\n\tmov r8,#0\n\tmov r7,#0\n\tmov r5,#0\n\n\t\n@Miramos que numero se ingreso para el display 1 \n@Comparamos si es 0\ncmp r0,#0\nbeq cero\n@Comparamos si es 1\ncmp r0,#1\nbeq uno\n@Comparamos si es 2\ncmp r0,#2\nbeq dos\n@Comparamos si es 3\ncmp r0,#3\nbeq tres\n@Comparamos si es 4\ncmp r0,#4\nbeq cuatro\n@Comparamos si es 5\ncmp r0,#5\nbeq cinco\n@Comparamos si es 6\ncmp r0,#6\nbeq seis\n@Comparamos si es 7\ncmp r0,#7\nbeq siete\n@Comparamos si es 8\ncmp r0,#8\nbeq ocho\n@Comparamos si es 9\ncmp r0,#9\nbeq nueve\n\ncero:\nmov r10,#0\nmov r9, #0\nmov r8, #0\nmov r7, #0\ncmp r5,#0\nbeq dis1\nbne dis2 \n\nuno:\nmov r10,#0\nmov r9, #0\nmov r8, #0\nmov r7, #1\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n\n\ndos:\nmov r10,#0\nmov r9, #0\nmov r8, #1\nmov r7, #0\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n\ntres:\nmov r10,#0\nmov r9, #0\nmov r8, #1\nmov r7, #1\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n\n\ncuatro:\nmov r10,#0\nmov r9, #1\nmov r8, #0\nmov r7, #0\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n\n \ncinco:\nmov r10,#0\nmov r9, #1\nmov r8, #0\nmov r7, #1\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n \nseis:\nmov r10,#0\nmov r9, #1\nmov r8, #1\nmov r7, #0\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n \nsiete:\nmov r10,#0\nmov r9, #1\nmov r8, #1\nmov r7, #1\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n\n \nocho:\nmov r10,#1\nmov r9, #0\nmov r8, #0\nmov r7, #0\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n \nnueve:\nmov r10,#1\nmov r9, #0\nmov r8, #0\nmov r7, #1\ncmp r5,#0\nbeq dis1\nbne dis2 \n\n\n@Vemos el numero de Display\n@cmp r0,#2\n@beq dis2\n \ndis1:\n\t/*-----------------------------\n\tEncendemos Display 1 (Unidades)\n\tPines:\n\tGPIO 02 --> 1000 A\n\tGPIO 03 --> 0100 B\n\tGPIO 04 --> 0010 C\n\tGPIO 17 --> 0001 D\n\t-----------------------------*/\n\tpush {r0,r1,r7,r8,r9,r10,lr}\n\tmov r0,#2\n\tmov r1,r7\n\tbl SetGpio\n\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\n\tpush {r0,r1,r7,r8,r9,r10,lr}\n\tmov r0,#3\n\tmov r1,r8\n\tbl SetGpio\n\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\n\tpush {r0,r1,r7,r8,r9,r10,lr}\n\tmov r0,#4\n\tmov r1,r9\n\tbl SetGpio\n\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\n\tpush {r0,r1,r7,r8,r9,r10,lr}\n\tmov r0,#17\n\tmov r1,r10\n\tbl SetGpio\n\tpop {r0,r1,r7,r8,r9,r10,lr}\n\n\tmov r5,#1\n\n\tb decena\n\n\n\n\ndecena:\t\n\tmov r10,#0\n\tmov r9,#0\n\tmov r8,#0\n\tmov r7,#0\n\t\n\t\n\t\n\t@Miramos que numero se ingreso para el display 2\n\t@Comparamos si es 0\n\tcmp r1,#0\n\tbeq cero\n\t@Comparamos si es 1\n\tcmp r1,#1\n\tbeq uno\n\t@Comparamos si es 2\n\tcmp r1,#2\n\tbeq dos\n\n\t@Comparamos si es 3\n\tcmp r1,#3\n\tbeq tres\n\t@Comparamos si es 4\n\tcmp r1,#4\n\tbeq cuatro\n\t@Comparamos si es 5\n\tcmp r1,#5\n\tbeq cinco\n\t@Comparamos si es 6\n\tcmp r1,#6\n\tbeq seis\n\t@Comparamos si es 7\n\tcmp r1,#7\n\tbeq siete\n\t@Comparamos si es 8\n\tcmp r1,#8\n\tbeq ocho\n\t@Comparamos si es 9\n\tcmp r1,#9\n\tbeq nueve\n\n\n\n\ndis2:\n\t/*\n\tEncendemos Display 2 (Decenas)\n\tPines:\n\tGPIO 22 --> 1000 A\n\tGPIO 10 --> 0100 B\n\tGPIO 09 --> 0010 C\n\tGPIO 11 --> 0001 D\n\t*/\n\t\n\tmov r0,#22\n\tmov r1,r7\n\tpush {lr}\n\tbl SetGpio\n\tpop {lr}\n\t\n\tmov r0,#10\n\tmov r1,r8\n\tpush {lr}\n\tbl SetGpio\n\tpop {lr}\n\t\n\tmov r0,#9\n\tmov r1,r9\n\tpush {lr}\n\tbl SetGpio\n\tpop {lr}\n\n\tmov r0,#11\n\tmov r1,r10\n\tpush {lr}\n\tbl SetGpio\n\tpop {lr}\n\n\tb terminar\n\n\nterminar:\nmov pc,lr\n\n\n\n\n\n\n\n\n\n@**************************************************************************\n@**************************************************************************\n@**************************************************************************\n\n/*-----------------------------------------\nSubrutina GetGpio\nEntradas: \nr0 --> numero de puerto\nSalidas:\nr0 = 1 si el puerto esta en High\nr0 = 0 si el puerto esta en Low\n\nNota: Se utiliza la variable global myloc\n------------------------------------------*/\n\n.global GetGpio\n\nGetGpio:\n@Recibimos en r0 el numero de pin\n\n/*-------------------------------------\nRevisamos si el pin esta en High o Low\n--------------------------------------*/\nldr r6, =myloc\nldr r6,[r6] @obtener direccion\nldr r5,[r6,#0x34]\nmov r7,#1\nlsl r7,r0 \t@ponemos 1 en el bit del puerto que queremos comparar\n@Comparamos\nand r5,r7 \nteq r5,#0\nmovne r0,#1 @Si el pin esta en High regresamos un 1\nmoveq r0,#0 @Si el pin esta en Low  regresamos un 0\n\nmov pc,lr \n\n\n.global GetGpio2\n@@/////////////////Subrutina prueba getGPIO\nGetGpio2:\n\t@R0 recibe el numero de puerto\t\n\t@R1,devuelve el estado del puerto \n\tmov r1,r0\n        ldr r6, =myloc\n \tldr r0, [r6] @ obtener direccion \n\tldr r5,[r0,#0x34]\n\tmov r7,#1\n\t@lsl r7,#5\n\tlsl r7,r1\n\tand r5,r7 \n\n\tteq r5,#0\n\tmoveq r0,#0\n\tmovne r0,#1\n\t\n\tmov pc,lr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@-----------------------------------------------------------------------\n@********************************************************\n@ division.s\n@ Autor: Martin L. Guzman\n@ Fecha: 30/07/2015\n@ Curso: CC4010 Taller de Assembler\n@ Contiene rutina para division\n@********************************************************\n\n\n@ *************************************************************\n@Subrutina que realiza una division entre 2 numeros (A/B)\n@Parametros:\n@  r0: numero 1 (A)\n@  r1: numero 2 (B)\n@Retorna:\n@  r0: resultado\n@  r1: residuo\n@ *************************************************************\n.global dividir\ndividir:\n    push {lr}\n\n    @ reiniciamos los valores de los registros donde iran los resultados\n    mov r2, #0\n    mov r3, r0 @asignamos el residuo como A\n    \n    inicio_div:\n        cmp r3,r1\n        blt fin_div     @terminar ya que B es mas grande que el residuo\n        sub r3,r3,r1    @residuo = residuo-B \n        add r2,r2,#1    @resultado = resultado+1\n        b inicio_div\n    fin_div:\n\n    mov r0, r2\n    mov r1, r3\n\n    pop {pc}\n    \n\n\n\n\n/*----------------------#############################################################\nSubrutina para esperar\nEntradas: \nr0 --> valor\nr1 = 0 segundos\nr1 = 1 minutos\nr1 = 2 horas\nRegistros:\nr8  --> Numero Grande (1 segundo Aprox.)\nr10 --> contador\n----------------------*/\n.global Esperar\nEsperar:\n\nldr r8,=delayReg\nldr r8,[r8]\n\n@Vemos si debemos esperar segundos, minutos u horas\ncmp r1,#0\nbeq segundos\ncmp r1,#1\nbeq minutos\ncmp r1,#2\nbeq horas\n\nsegundos:\n\tmov r10, #0\n\tcicloSegundos:\n\n\tmov r7, #0\n    \tb compare\n\tloop:\n    \tadd r7, #1     //r7++\n\tcompare:\n    \tcmp r7,r8     //test r7 == r0\n   \t\tbne loop\n\n   \tadd r10,r10,#1\n   \tcmp r10,r0\n   \tbne cicloSegundos\nb terminarEspera\n\nminutos:\n\tmov r10,#0\n\tldr r9,=sesenta\n\tldr r9,[r9]\n\tmul r0,r0,r9\n\tcicloMinutos:\n\n\tmov r7,#0\n    \tb compare1\n\tloop1:\n    \tadd r7,#1     //r7++\n\tcompare1:\n    \tcmp r7,r8     //test r7 == r0\n   \t\tbne loop1\n\n   \tadd r10,r10,#1\n   \tcmp r10,r0\n   \tbne cicloMinutos\nb terminarEspera\n\n\nhoras:\n\tmov r10,#0\n\tldr r9,=dosmil\n\tldr r9,[r9]\n\tmul r0,r0,r9\n\tcicloHoras:\n\n\tmov r7,#0\n    \tb compare2\n\tloop2:\n    \tadd r7,#1     //r7++\n\tcompare2:\n    \tcmp r7,r8     //test r7 == r0\n   \t\tbne loop2\n\n   \tadd r10,r10,#1\n   \tcmp r10,r0\n   \tbne cicloHoras\n\nterminarEspera:\nmov pc,lr\n\n.data\n.balign 4\ndelayReg:.word 596700000 @Un Segundo\nsesenta: .word 60\t@Para tardar minutos\ndosmil:\t .word 2400 @Para tardar horas\n\n",
+			"file": "/C/Users/daval/Desktop/Offline/assembler/subrutinas.s",
+			"file_size": 7111,
+			"file_write_time": 131711777120460817,
+			"settings":
+			{
+				"buffer_size": 7114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/main.s",
+			"settings":
+			{
+				"buffer_size": 2028,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/connect4.s",
+			"settings":
+			{
+				"buffer_size": 10042,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/*\nPrograma contiene las subrutinas necesarias para el funcionamiento de la alarma\nDavid Valenzuela 171001\nFernando Hengstenber 17699\n*/\n\n.text\n.align 2\n\n/* \nSubrutina para controlar los displays de 7 segmentos\nPines display 1 utilizando BCD:\n\tGPIO 02 --> 1000 A\n\tGPIO 03 --> 0100 B\n\tGPIO 04 --> 0010 C\n\tGPIO 17 --> 0001 D\nPines display 2 utilizando BCD:\n\tGPIO 22 --> 1000 A\n\tGPIO 10 --> 0100 B\n\tGPIO 09 --> 0010 C\n\tGPIO 11 --> 0001 D\n\nArgs:\n\tr0: Numero en display 1 (Unidades)\n\tr1: Numero en display 2 (Decenas)\n\n*/\n.global numeros\nnumeros:\n\tmov r10,#0\n\tmov r9,#0\n\tmov r8,#0\n\tmov r7,#0\n\tmov r5,#0\t\n\t@Miramos que numero se ingreso para el display 1 \n\t@Comparamos si es 0\n\tcmp r0,#0\n\tbeq cero\n\t@Comparamos si es 1\n\tcmp r0,#1\n\tbeq uno\n\t@Comparamos si es 2\n\tcmp r0,#2\n\tbeq dos\n\t@Comparamos si es 3\n\tcmp r0,#3\n\tbeq tres\n\t@Comparamos si es 4\n\tcmp r0,#4\n\tbeq cuatro\n\t@Comparamos si es 5\n\tcmp r0,#5\n\tbeq cinco\n\t@Comparamos si es 6\n\tcmp r0,#6\n\tbeq seis\n\t@Comparamos si es 7\n\tcmp r0,#7\n\tbeq siete\n\t@Comparamos si es 8\n\tcmp r0,#8\n\tbeq ocho\n\t@Comparamos si es 9\n\tcmp r0,#9\n\tbeq nueve\n\tcero:\n\t\tmov r10,#0\n\t\tmov r9, #0\n\t\tmov r8, #0\n\t\tmov r7, #0\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2 \n\tuno:\n\t\tmov r10,#0\n\t\tmov r9, #0\n\t\tmov r8, #0\n\t\tmov r7, #1\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2 \n\tdos:\n\t\tmov r10,#0\n\t\tmov r9, #0\n\t\tmov r8, #1\n\t\tmov r7, #0\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2 \n\ttres:\n\t\tmov r10,#0\n\t\tmov r9, #0\n\t\tmov r8, #1\n\t\tmov r7, #1\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2 \n\tcuatro:\n\t\tmov r10,#0\n\t\tmov r9, #1\n\t\tmov r8, #0\n\t\tmov r7, #0\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2 \t \n\tcinco:\n\t\tmov r10,#0\n\t\tmov r9, #1\n\t\tmov r8, #0\n\t\tmov r7, #1\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2  \n\tseis:\n\t\tmov r10,#0\n\t\tmov r9, #1\n\t\tmov r8, #1\n\t\tmov r7, #0\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2  \n\tsiete:\n\t\tmov r10,#0\n\t\tmov r9, #1\n\t\tmov r8, #1\n\t\tmov r7, #1\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2  \n\tocho:\n\t\tmov r10,#1\n\t\tmov r9, #0\n\t\tmov r8, #0\n\t\tmov r7, #0\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2  \n\tnueve:\n\t\tmov r10,#1\n\t\tmov r9, #0\n\t\tmov r8, #0\n\t\tmov r7, #1\n\t\tcmp r5,#0\n\t\tbeq dis1\n\t\tbne dis2 \n\t@Vemos el numero de Display\n\t@cmp r0,#2\n\t@beq dis2\n\tdis1:\n\t\tpush {r0,r1,r7,r8,r9,r10,lr}\n\t\tmov r0,#2\n\t\tmov r1,r7\n\t\tbl SetGpio\n\t\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\tpush {r0,r1,r7,r8,r9,r10,lr}\n\t\tmov r0,#3\n\t\tmov r1,r8\n\t\tbl SetGpio\n\t\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\tpush {r0,r1,r7,r8,r9,r10,lr}\n\t\tmov r0,#4\n\t\tmov r1,r9\n\t\tbl SetGpio\n\t\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\tpush {r0,r1,r7,r8,r9,r10,lr}\n\t\tmov r0,#17\n\t\tmov r1,r10\n\t\tbl SetGpio\n\t\tpop {r0,r1,r7,r8,r9,r10,lr}\n\t\tmov r5,#1\n\t\tb decena\n\tdecena:\t\n\t\tmov r10,#0\n\t\tmov r9,#0\n\t\tmov r8,#0\n\t\tmov r7,#0\n\t\t@Miramos que numero se ingreso para el display 2\n\t\t@Comparamos si es 0\n\t\tcmp r1,#0\n\t\tbeq cero\n\t\t@Comparamos si es 1\n\t\tcmp r1,#1\n\t\tbeq uno\n\t\t@Comparamos si es 2\n\t\tcmp r1,#2\n\t\tbeq dos\n\t\t@Comparamos si es 3\n\t\tcmp r1,#3\n\t\tbeq tres\n\t\t@Comparamos si es 4\n\t\tcmp r1,#4\n\t\tbeq cuatro\n\t\t@Comparamos si es 5\n\t\tcmp r1,#5\n\t\tbeq cinco\n\t\t@Comparamos si es 6\n\t\tcmp r1,#6\n\t\tbeq seis\n\t\t@Comparamos si es 7\n\t\tcmp r1,#7\n\t\tbeq siete\n\t\t@Comparamos si es 8\n\t\tcmp r1,#8\n\t\tbeq ocho\n\t\t@Comparamos si es 9\n\t\tcmp r1,#9\n\t\tbeq nueve\n\tdis2:\n\t\tmov r0,#22\n\t\tmov r1,r7\n\t\tpush {lr}\n\t\tbl SetGpio\n\t\tpop {lr}\n\t\tmov r0,#10\n\t\tmov r1,r8\n\t\tpush {lr}\n\t\tbl SetGpio\n\t\tpop {lr}\n\t\tmov r0,#9\n\t\tmov r1,r9\n\t\tpush {lr}\n\t\tbl SetGpio\n\t\tpop {lr}\n\t\tmov r0,#11\n\t\tmov r1,r10\n\t\tpush {lr}\n\t\tbl SetGpio\n\t\tpop {lr}\n\t\tb terminar\n\tterminar:\n\t\tmov pc,lr\n\n/*\nSubrutina es un delay para n cantidad de segundos\n\t\n\tArgs:\n\t\tr0: n cantidad de segundos a esperar\n*/\n.global segundos\nsegundos:\n\t@Cargamos numero grande (un segundo)\n\tldr r8, =delayReg\n\tldr r8, [r8]\n\t@Contador de repeticiones\n\tmov r10, #0\n\t/* Ciclo tarda aproximadamente un segundo */\n\tcicloSegundos:\n\t\tmov r7, #0\n\t\tb comparar\n\t\t/* while(r7 != 596700000){ r7++ }*/\n\t\tloop:\n\t\t\tadd r7, #1\n\t\tcomparar:\n\t\t\tcmp r7, r8\n\t\t\tbne loop\n\t\tadd r10, r10, #1 @r10++\n\t\t/* if(r10 != r0) { cicloSegundos } else { terminarEspera } */\n\t\tcmp r10, r0\n\t\tbne cicloSegundos\n\t\tb terminarEspera\n\tterminarEspera:\n\t\tmov pc,lr\n\n/*\nSubrutina para la division de dos numeros enteros de la forma A/B\n\n\tArgs:\n\t\tr0: numero A\n\t\tr1: numero B\n\n\tReturns:\n\t\tr0: Resultado de A/B\n\t\tr1: Residuo de A/B\n*/\n.global dividir\ndividir:\n    push {lr}\n    @ reiniciamos los valores de los registros donde iran los resultados\n    mov r2, #0\n    mov r3, r0 @asignamos el residuo como A\n    inicio_div:\n        cmp r3,r1\n        blt fin_div     @terminar ya que B es mas grande que el residuo\n        sub r3,r3,r1    @residuo = residuo-B \n        add r2,r2,#1    @resultado = resultado+1\n        b inicio_div\n    fin_div:\n\t    mov r0, r2\n\t    mov r1, r3\n\t    pop {pc}\n\n/*\nSubrutinas para obtener el digito de decenas y unidades de un numero entre 0 y 99\n\nArgs:\n\tr0: numero entre 0 y 99\n\nReturns:\n\tr0: Digito de las unidades entre 0 y 9\n\tr1: Digito de las decenas entre 0 y 9\n\t** En caso de numero invalido se retorna 0 en ambos registros **\n*/\n.global getDigits\ngetDigits:\n\t/* Obtenemos los casos posibles */\n\tcmp r0, #0\n\tble ceros\n\tcmp r0, #9\n\tble underTen\n\tcmp r0, #99\n\tble digits\n\t/* 9 < n < 99 */\n\tdigits:\n\t\tpush {lr}\n\t\tmov r1, #10\n\t\tbl dividir\n\t\t/* r1 tiene numero de la unidad, r0 el de la decena. Los cambiamos */\n\t\tmov r9, r0 @r9 = r0\n\t\tmov r0, r1 @r0, = r1\n\t\tmov r1, r9 @r1 = r9\n\t\tpop {lr}\n\t\tb exit\n\t/* Numero menor a 10 */\n\tunderTen:\n\t\t@r0 ya tiene las unidades, decenas = 0\n\t\tmov r1, #0\n\t\tb exit\n\t/* Error unidadees y decenas = 0 */\n\tceros:\n\t\tmov r0, #0\n\t\tmov r1, #0\n\t\tb exit\n\texit:\n\t\tmov pc, lr\n\n\n\n/******************************************************************************\n*\tgpio.s\n*\t by Alex Chadwick\n*\n*\tA sample assembly code implementation of the ok04 operating system.\n*\tSee main.s for details.\n*\n*\tgpio.s contains the rountines for manipulation of the GPIO ports.\n******************************************************************************/\n\n/* NEW\n* According to the EABI, all method calls should use r0-r3 for passing\n* parameters, should preserve registers r4-r8,r10-r11,sp between calls, and \n* should return values in r0 (and r1 if needed). \n* It does also stipulate many things about how methods should use the registers\n* and stack during calls, but we're using hand coded assembly. All we need to \n* do is obey the start and end conditions, and if all our methods do this, they\n* would all work from C.\n*/\n\n/* NEW\n* GetGpioAddress returns the base address of the GPIO region as a physical address\n* in register r0.\n* C++ Signature: void* GetGpioAddress()\n*/\n.global GetGpioAddress\nGetGpioAddress:\n\tgpioAddr .req r0\n\tpush {lr}\n\t@ldr gpioAddr,=0x20200000\n\tldr gpioAddr,=0x3F200000 @GPIO base para raspberry 2\n\t@modificaciones para utilizar la memoria virtual\n\tbl phys_to_virt\n \tmov r7, r0  @ r7 points to that physical page\n \tldr r6, =myloc\n \tstr r7, [r6] @ save this \n\tpop {pc}\n\t.unreq gpioAddr\n\n/* NEW\n* SetGpioFunction sets the function of the GPIO register addressed by r0 to the\n* low  3 bits of r1.\n* C++ Signature: void SetGpioFunction(u32 gpioRegister, u32 function)\n*/\n.global SetGpioFunction\nSetGpioFunction:\n    pinNum .req r0\n    pinFunc .req r1\n\tcmp pinNum,#53\n\tcmpls pinFunc,#7\n\tmovhi pc,lr\n\n\tpush {lr}\n\tmov r2,pinNum\n\t.unreq pinNum\n\tpinNum .req r2\n\t@bl GetGpioAddress no se llama la funcion sino\n\tldr r6, =myloc\n \tldr r0, [r6] @ obtener direccion \t\n\tgpioAddr .req r0\n\n\tfunctionLoop$:\n\t\tcmp pinNum,#9\n\t\tsubhi pinNum,#10\n\t\taddhi gpioAddr,#4\n\t\tbhi functionLoop$\n\n\tadd pinNum, pinNum,lsl #1\n\tlsl pinFunc,pinNum\n\n\tmask .req r3\n\tmov mask,#7\t\t\t\t\t/* r3 = 111 in binary */\n\tlsl mask,pinNum\t\t\t\t/* r3 = 11100..00 where the 111 is in the same position as the function in r1 */\n\t.unreq pinNum\n\n\tmvn mask,mask\t\t\t\t/* r3 = 11..1100011..11 where the 000 is in the same poisiont as the function in r1 */\n\toldFunc .req r2\n\tldr oldFunc,[gpioAddr]\t\t/* r2 = existing code */\n\tand oldFunc,mask\t\t\t/* r2 = existing code with bits for this pin all 0 */\n\t.unreq mask\n\n\torr pinFunc,oldFunc\t\t\t/* r1 = existing code with correct bits set */\n\t.unreq oldFunc\n\n\tstr pinFunc,[gpioAddr]\n\t.unreq pinFunc\n\t.unreq gpioAddr\n\tpop {pc}\n\n/* NEW\n* SetGpio sets the GPIO pin addressed by register r0 high if r1 != 0 and low\n* otherwise. \n* C++ Signature: void SetGpio(u32 gpioRegister, u32 value)\n*/\n.global SetGpio\nSetGpio:\t\n    pinNum .req r0\n    pinVal .req r1\n\n\tcmp pinNum,#53\n\tmovhi pc,lr\n\tpush {lr}\n\tmov r2,pinNum\t\n    .unreq pinNum\t\n    pinNum .req r2\n\t@bl GetGpioAddress no se llama la funcion sino\n\tldr r6, =myloc\n \tldr r0, [r6] @ obtener direccion \n    gpioAddr .req r0\n\n\tpinBank .req r3\n\tlsr pinBank,pinNum,#5\n\tlsl pinBank,#2\n\tadd gpioAddr,pinBank\n\t.unreq pinBank\n\n\tand pinNum,#31\n\tsetBit .req r3\n\tmov setBit,#1\n\tlsl setBit,pinNum\n\t.unreq pinNum\n\n\tteq pinVal,#0\n\t.unreq pinVal\n\tstreq setBit,[gpioAddr,#40]\n\tstrne setBit,[gpioAddr,#28]\n\t.unreq setBit\n\t.unreq gpioAddr\n\tpop {pc}\n\n@**************************************************************************\n@**************************************************************************\n@**************************************************************************\n\n/*-----------------------------------------\nSubrutina GetGpio\nEntradas: \nr0 --> numero de puerto\nSalidas:\nr0 = 1 si el puerto esta en High\nr0 = 0 si el puerto esta en Low\n\nNota: Se utiliza la variable global myloc\n------------------------------------------*/\n\n.global GetGpio\n\nGetGpio:\n@Recibimos en r0 el numero de pin\n\n/*-------------------------------------\nRevisamos si el pin esta en High o Low\n--------------------------------------*/\nldr r6, =myloc\nldr r6,[r6] @obtener direccion\nldr r5,[r6,#0x34]\nmov r7,#1\nlsl r7,r0 \t@ponemos 1 en el bit del puerto que queremos comparar\n@Comparamos\nand r5,r7 \nteq r5,#0\nmovne r0,#1 @Si el pin esta en High regresamos un 1\nmoveq r0,#0 @Si el pin esta en Low  regresamos un 0\n\nmov pc,lr \n\n\n.global GetGpio2\n@@/////////////////Subrutina prueba getGPIO\nGetGpio2:\n\t@R0 recibe el numero de puerto\t\n\t@R1,devuelve el estado del puerto \n\tmov r1,r0\n        ldr r6, =myloc\n \tldr r0, [r6] @ obtener direccion \n\tldr r5,[r0,#0x34]\n\tmov r7,#1\n\t@lsl r7,#5\n\tlsl r7,r1\n\tand r5,r7 \n\n\tteq r5,#0\n\tmoveq r0,#0\n\tmovne r0,#1\n\t\n\tmov pc,lr\n\n.data\n.balign 4\ndelayReg:.word 596700000 @Un Segundo\n\n\n\n",
+			"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/driverReloj.s",
+			"file_size": 10511,
+			"file_write_time": 131713490455287097,
+			"settings":
+			{
+				"buffer_size": 10034,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/main.s",
+			"settings":
+			{
+				"buffer_size": 6102,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/CalculadoraPostFix.java",
+			"settings":
+			{
+				"buffer_size": 2980,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 89.0,
+		"last_filter": "Install",
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa\t",
+				"Install Package Control"
+			],
+			[
+				"",
+				"Snippet: java.math."
+			]
+		],
+		"width": 609.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/Main.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/Calculadora.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/AbstractFactory.java",
+		"/C/Users/daval/AppData/Local/Temp/paralelo.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/phys_to_virt.c",
+		"/C/Users/daval/Desktop/Offline/assembler/crono/main.s",
+		"/C/Users/daval/Desktop/Offline/assembler/crono/driverReloj.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/timeLib.c",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/timer.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB13/gpio.s",
+		"/C/Users/daval/AppData/Local/Temp/timer.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/main",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB14/driverReloj.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/connect4.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB10/LAB10/Hoja10Grafos/driverDPM.py",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB10/LAB10/Hoja10Grafos/main.py",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB10/LAB10/Hoja10Grafos/testDataBase.csv",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB10/LAB10/Hoja10Grafos/CreateDB.py",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB12/pruebaLED.py",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB12/biled.s",
+		"/C/Users/daval/Desktop/Offline/Room/Laboratorio2CC3055-master/LaboratorioRoom/app/src/main/java/com/plataformas/anahernandez/laboratorioroom/MainActivity.java",
+		"/C/Users/daval/Desktop/subrutinas.s",
+		"/C/Users/daval/Desktop/gpio0_2.s",
+		"/C/Users/daval/Desktop/principal.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB13/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB13/gpio.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB12/LED.py",
+		"/C/Users/daval/AppData/Local/Temp/sec30.s",
+		"/C/Users/daval/Desktop/Offline/MainActivity.java",
+		"/C/Users/daval/Desktop/MainActivity.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/edge.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/GraphMatrixVertex.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/graphMatrix.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/graphMatrixUndirected.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/graphinterface.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/graphMatrixDirected.java",
+		"/C/Users/daval/Desktop/RepresentarGrafos/RepresentarGrafos/vertex.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/LED.py",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/biled.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/gpio0.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/phys_to_virt.c",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/gpio0_2.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/puertos_2.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB12/intento.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB9/calculadora.s",
+		"/C/Users/daval/Desktop/Offline/ledOk_2.s",
+		"/C/Users/daval/Desktop/Offline/ledOk_1.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/s.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/calculoNotaProyecto.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/subrutinasFlotante.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/aritmeticaFlotante.s",
+		"/C/Users/daval/Desktop/Offline/phys_to_virt.c",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/prog22a.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/vectorFlotante.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/Promedio/promedio.s",
+		"/C/Users/daval/Desktop/phys_to_virt.c",
+		"/C/Users/daval/AppData/Local/Temp/prog22b.s",
+		"/C/Users/daval/AppData/Local/Temp/lecturaFlotante.s",
+		"/C/Users/daval/AppData/Local/Temp/aritmeticaFlotante-1.s",
+		"/C/Users/daval/AppData/Local/Temp/leeYcompara.s",
+		"/C/Users/daval/AppData/Local/Temp/aritmeticaFlotante.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/Promedio/main.s",
+		"/C/Users/daval/AppData/Local/Temp/subrutinasFlotante.s",
+		"/C/Users/daval/AppData/Local/Temp/prog22a.s",
+		"/C/Users/daval/Desktop/random.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/proyecto.s",
+		"/C/Users/daval/Desktop/rurple1.0rc3/rurple1.0rc3/setup.py",
+		"/C/Users/daval/Desktop/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/mayorInt/mayorInt.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/Connect4/connect4.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB11/promedio.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/Connect4/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/Connect4/Test/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/Connect4/Test/connect4.s",
+		"/C/Users/daval/AppData/Local/Temp/recorrido.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Proyecto2/Connect4/connect4.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Proyecto2/Connect4/main.s",
+		"/C/Users/daval/AppData/Local/Temp/recorrido-1.s",
+		"/C/Users/daval/AppData/Local/Temp/main.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/ARM/programa1.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/ARM/ejercicio.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB10/lab10programa1.s",
+		"/C/Users/daval/AppData/Local/Temp/usoScanf.s",
+		"/C/Users/daval/AppData/Local/Temp/vectores.s",
+		"/C/Users/daval/AppData/Local/Temp/subrutinas.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Proyecto2/Connect4/connect-4.s",
+		"/C/Users/daval/Desktop/BinaryTree.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/ARM/programa2.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB9/Method_StatisticsSplay.csv",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB9/Call_TracerSplay.csv",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB9/LAB9RBT/freedict-eng-spa.dic",
+		"/C/Users/daval/AppData/Local/Temp/vectores_1.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB8/LAB8TEM4.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB10/lab10programa2.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/lab10programa1.s",
+		"/C/Users/daval/Desktop/PruebaAssembler/CuatroEnLinea.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/CalculadoraPostFix.java",
+		"/C/Users/daval/Desktop/SplayTree.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB7/arboles/arboles/src/arboles/Association.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB7/arboles/arboles/src/arboles/BinaryTree.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB7/arboles/arboles/src/arboles/datos.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/StackVectorFactory.java",
+		"/C/Users/daval/Desktop/Test.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB8/tem5.s",
+		"/C/Users/daval/Desktop/PruebaAssembler/StackVector.java",
+		"/C/Users/daval/Desktop/CuatroEnLinea.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB2/LAB2/CalculadoraPostFix/Stack.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB9/usoGetchar.s",
+		"/C/Users/daval/AppData/Local/Temp/condicional.s",
+		"/C/Users/daval/AppData/Local/Temp/usoPrintf.s",
+		"/C/Users/daval/AppData/Local/Temp/usoCiclos.s",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB8/PreLabAssembler/hello.s",
+		"/C/Users/daval/Desktop/lyrics-crawler-master/get-lyric.py",
+		"/C/Users/daval/Desktop/Hoja8Colas-master/Colas con prioridad JFC/src/Main.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LAB8/PreLabAssembler/multiplicacion.s",
+		"/C/Users/daval/Desktop/hello.s",
+		"/C/Users/daval/Desktop/multiplicacion.s",
+		"/C/Users/daval/Desktop/Heap.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB8/Hoja8Colas/Colas con prioridad/src/PriorityQueue.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB8/Hoja8Colas/Colas con prioridad/src/VectorHeap.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB8/Hoja8Colas/Colas con prioridad/src/PruebasHeap.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB8/Hoja8Colas/Colas con prioridad/src/Pacientes.java",
+		"/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB8/Hoja8Colas/Colas con prioridad/src/Main.java",
+		"/C/Users/daval/Desktop/interfacePriorityQueue.java",
+		"/C/Users/daval/Desktop/VectorHeap2.java"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".req r0",
+			".req",
+			"result",
+			"movne winner, 0",
+			"SplayTree.insertar(java.lang.Comparable, java.lang.Object)",
+			"ateayer",
+			"sum ",
+			"ñ",
+			"getTipoPila",
+			"empty",
+			"}",
+			"IOException",
+			"}",
+			"mostrarEstacionBoton",
+			"JButton ",
+			"JButton",
+			"getFrecActual",
+			"mostrarEstacionBoton",
+			"mas"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"winner"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/daval/Desktop/Offline/assembler/gpio0_2.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1180,
+								1180
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/daval/Desktop/Offline/assembler/principal.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20257,
+								20257
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/daval/Desktop/Offline/assembler/subrutinas.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6289,
+								6289
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5526.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/main.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2020,
+								2020
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/proyecto 3/connect4.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10042,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1391,
+								1391
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 398.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/driverReloj.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3275,
+								3275
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 1.0,
+						"translation.y": 3071.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/daval/Desktop/UVG/A2/C1/Assembler/Laboratorios/LaboratoriosAssembler/LAB14/main.s",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4917,
+								4917
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ARM Assembly/Syntaxes/ARM Assembly.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 13.0,
+						"translation.y": 3491.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/daval/Desktop/UVG/A2/C1/EstructurasDeDatos/Laboratorios/LAB4/LAB4/Lab4CalcPostfix/src/CalculadoraPostFix.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 148.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "Assembler.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

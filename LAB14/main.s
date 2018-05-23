@@ -259,14 +259,14 @@ cronometro:
 	push {cont, alarma}
 	@Obtenemos los digitos
 	mov r0, cont
-	bl getDigits
+	@bl getDigits
 	@Mostramos los digitos en los displays y en la pantalla
 	push {r0, r1}
 	mov r2, r0
 	ldr r0, =tstStar
 	bl printf
 	pop {r0, r1}
-	bl numeros
+	@bl numeros
 	@Esperamos por un segundo
 	mov r0, #1
 	bl segundos
