@@ -26,7 +26,7 @@ myloc: .word 0
 .type main,%function
 main:
 	stmfd sp!,{lr}
-	b start
+	b comen
 confPin:
 /*
 Configuracion de pines:
@@ -111,7 +111,7 @@ Configuracion de pines:
 	bl SetGpioFunction
 
 
-start:
+comen:
 	/* Mostramos el menu */
 	ldr r0, =menu
 	bl printf
@@ -300,14 +300,14 @@ alerta:
 	mov r0, #12 @GPIO 12
 	mov r1, #1 @low
 	bl SetGpio
-	b start
+	b comen
 
 
 /* Opcion invalida ingresada */
 errorOpt:
 	ldr r0, =errorMessageOpt
 	bl printf
-	b start
+	b comen
 
 /* Valor invalido ingresado */
 errorRj:
